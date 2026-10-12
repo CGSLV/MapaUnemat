@@ -1,0 +1,7 @@
+/* Aumento a imagem do brasão com maior largura de tela*/
+@media (min-width: 768px) {
+    #brasao img {
+        height: 72px;
+    }
+}
+

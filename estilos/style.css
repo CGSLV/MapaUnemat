@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+  --cabecalho: #2E7897;
+  --unemat-azul-escuro: #286A84;
+  --unemat-azul-profundo: #225F78;
+  --unemat-verde-claro: #57A15F;
+  --unemat-verde: #3D855A;
+  --fundo: #FFFFFF;
+  --fundo-suave: #F5F6F6;
+  --texto: #333333;
+  --borda: #DDDDDD;
+
+  --espaco-painel: 16px;
+  --espaco-secao: 24px;
+  --raio-cartao: 6px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    height: 100dvh;
+    overflow: hidden;
+}
+
+/* Header com flexbox */
+header {
+    flex-shrink: 0;
+    background-color: var(--cabecalho);
+    color: white;
+    padding: 10px 12px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.barra-degrade {
+    height: 20px;
+    flex-shrink: 0;
+    background: linear-gradient(to right, var(--unemat-verde-claro) 95%,var(--unemat-azul-escuro) 100%);
+}
+
+#brasao img {
+    padding-left: 5px;
+    display: block;
+    height: 60px;
+    width: auto;
+}
+
+
+/* O mapa ocupa apenas o espaço que sobra abaixo do cabeçalho. (Para o cabeçalo não desaparecer quando clicar no zoom) */
+#map {
+    flex: 1;
+    min-height: 0;
+    width: 100%;
+}
+
+/* Configurações botão de localização do usuário*/
+.botao-localizacao {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 2px;
+    background: white;
+    color: var(--unemat-verde);
+    cursor: pointer;
+}
+
+.botao-localizacao:disabled {
+    opacity: 0.5;
+    cursor: wait;
+}
+
+.botao-localizacao:focus-visible {
+    outline: 3px solid var(--unemat-azul-escuro);
+    outline-offset: 2px;
+}
+
+/* Botões de mapa e satélite */
+.controle-fundo {
+    display: flex;
+    background: white;
+    border-radius: 4px;
+}
+
+.botao-fundo {
+    min-height: 30px;
+    padding: 0 12px;
+    border: 0;
+    background: white;
+    color: var(--texto);
+    font: inherit;
+    cursor: pointer;
+}
+
+/* Configurações de quando o botão de fundo está ativado muda a cor*/
+.botao-fundo:first-child {
+    border-radius: 2px 0 0 2px;
+}
+
+.botao-fundo:nth-child(2) {
+    border-radius: 0 2px 2px 0;
+}
+
+/* Cor do texto quando o botão de fundo está ativado */
+.botao-fundo[aria-pressed="true"] {
+    background: var(--unemat-azul-escuro);
+    color: white;
+}
+
+.botao-fundo:focus-visible {
+    outline: 3px solid var(--unemat-verde);
+    outline-offset: 2px;
+}
+
+/* Botão HOME*/
+.botao-home {
+    position: absolute;
+    right: calc(100% + 8px);
+    top: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    background: white;
+    color: var(--unemat-verde);
+    cursor: pointer;
+    margin-top: -7px
+}
+
+.botao-home:focus-visible {
+    outline: 3px solid var(--unemat-azul-escuro);
+    outline-offset: 2px;
+}
+
+/* Aumentando o tamanho dos botões de zoom */
+.leaflet-touch .leaflet-control-zoom a,
+.leaflet-control-zoom a {
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 26px;
+}
