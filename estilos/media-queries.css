@@ -1,7 +1,17 @@
 /* Aumento a imagem do brasão com maior largura de tela*/
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     #brasao img {
         height: 72px;
     }
 }
 
+@media screen and (min-width: 1024px) {
+    /* Some com a imagem do brasao */
+    #brasao {
+        display: none;
+    }
+
+    #logotipo {
+        display: block;
+    }
+}

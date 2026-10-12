@@ -60,6 +60,19 @@ header {
     width: auto;
 }
 
+/* Configurações logotipo */
+#logotipo {
+    /* Deixa invisivel quando a tela estiver pequena */
+    display: none;
+}
+
+#logotipo img {
+    padding-left: 10px;
+    display: block;
+    height: 60px;
+    width: auto;
+}
+
 
 /* O mapa ocupa apenas o espaço que sobra abaixo do cabeçalho. (Para o cabeçalo não desaparecer quando clicar no zoom) */
 #map {
