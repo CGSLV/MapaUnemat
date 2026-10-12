@@ -131,16 +131,12 @@ header {
     border-radius: 0 2px 2px 0;
 }
 
-/* Cor do texto quando o botão de fundo está ativado */
+/* Muda a cor do fundo quando clicado */
 .botao-fundo[aria-pressed="true"] {
     background: var(--unemat-azul-escuro);
     color: white;
 }
 
-.botao-fundo:focus-visible {
-    outline: 3px solid var(--unemat-verde);
-    outline-offset: 2px;
-}
 
 /* Botão HOME*/
 .botao-home {
