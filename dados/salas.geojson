@@ -30,7 +30,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -61,7 +66,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -92,7 +102,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -123,7 +138,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -154,7 +174,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -185,7 +210,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -216,7 +246,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -247,7 +282,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -278,7 +318,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -309,7 +354,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -340,7 +390,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -371,7 +426,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -402,7 +462,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -433,7 +498,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -464,7 +534,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -495,7 +570,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -526,7 +606,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -557,7 +642,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -588,7 +678,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -619,7 +714,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -650,7 +750,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -681,7 +786,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -712,7 +822,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -743,7 +858,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -774,7 +894,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -805,7 +930,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -836,7 +966,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -867,7 +1002,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -898,7 +1038,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -929,7 +1074,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -960,7 +1110,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -991,7 +1146,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -1022,7 +1182,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -1053,7 +1218,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -1084,7 +1254,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -1115,7 +1290,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -1146,7 +1326,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -1177,7 +1362,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -1208,7 +1398,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -1239,7 +1434,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -1270,7 +1470,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -1301,7 +1506,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -1332,7 +1542,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -1363,7 +1578,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -1394,7 +1614,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -1425,7 +1650,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -1456,7 +1686,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -1487,7 +1722,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 10,
+                "nome": "SPD - Supervisão de Processamento de Dados",
+                "id_bloco": "02",
+                "tipo": "administrativo"
+            }
         },
         {
             "type": "Feature",
@@ -1518,7 +1758,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": "06",
+                "nome": "A2",
+                "id_bloco": "02",
+                "tipo": "sala"
+            }
         },
         {
             "type": "Feature",
@@ -1549,7 +1794,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": "09",
+                "nome": "Laboratório de Informática I",
+                "id_bloco": "02",
+                "tipo": "laboratorio"
+            }
         },
         {
             "type": "Feature",
@@ -1580,7 +1830,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 11,
+                "nome": "Laboratório de Informática II",
+                "id_bloco": "02",
+                "tipo": "laboratorio"
+            }
         },
         {
             "type": "Feature",
@@ -1611,7 +1866,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 12,
+                "nome": "Laboratório de Informática III",
+                "id_bloco": "02",
+                "tipo": "laboratorio"
+            }
         },
         {
             "type": "Feature",
@@ -1642,7 +1902,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": "05",
+                "nome": "A1",
+                "id_bloco": "02",
+                "tipo": "sala"
+            }
         },
         {
             "type": "Feature",
@@ -1673,7 +1938,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": "07",
+                "nome": "Laboratório de Redes e Computadores",
+                "id_bloco": "02",
+                "tipo": "laboratorio"
+            }
         },
         {
             "type": "Feature",
@@ -1704,7 +1974,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": "08",
+                "nome": "CATIS",
+                "id_bloco": "02",
+                "tipo": "laboratorio"
+            }
         },
         {
             "type": "Feature",
@@ -1735,7 +2010,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": "01",
+                "nome": "Banheiros Bloco A",
+                "id_bloco": "02",
+                "tipo": "banheiro"
+            }
         },
         {
             "type": "Feature",
@@ -1766,7 +2046,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": "03",
+                "nome": "Auditório",
+                "id_bloco": "02",
+                "tipo": "auditorio"
+            }
         },
         {
             "type": "Feature",
@@ -1788,6 +2073,10 @@
                         ],
                         [
                             -57.173227,
+                            -15.064822
+                        ],
+                        [
+                            -57.173227,
                             -15.064793
                         ],
                         [
@@ -1797,7 +2086,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": "02",
+                "nome": "Hall de entrada",
+                "id_bloco": "02",
+                "tipo": "0"
+            }
         },
         {
             "type": "Feature",
@@ -1828,7 +2122,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": "04",
+                "nome": "Depósito",
+                "id_bloco": "02",
+                "tipo": "administrativo"
+            }
         },
         {
             "type": "Feature",
@@ -1859,7 +2158,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -1890,7 +2194,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -1921,7 +2230,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": "0",
+                "id_bloco": 0,
+                "tipo": "0"
+            }
         },
         {
             "type": "Feature",
@@ -1952,7 +2266,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -1983,7 +2302,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -2014,7 +2338,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -2057,7 +2386,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -2088,7 +2422,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -2119,7 +2458,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -2150,7 +2494,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -2181,7 +2530,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -2208,7 +2562,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -2239,7 +2598,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -2270,7 +2634,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -2297,7 +2666,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -2340,7 +2714,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -2371,7 +2750,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -2402,7 +2786,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -2433,7 +2822,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -2464,7 +2858,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -2495,7 +2894,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -2526,7 +2930,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -2557,7 +2966,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -2588,7 +3002,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -2615,7 +3034,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -2646,7 +3070,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -2677,7 +3106,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -2708,7 +3142,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -2739,7 +3178,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -2770,7 +3214,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -2801,7 +3250,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -2832,7 +3286,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -2863,7 +3322,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -2894,7 +3358,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -2925,7 +3394,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -2956,7 +3430,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -2987,7 +3466,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -3018,7 +3502,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -3049,7 +3538,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -3080,7 +3574,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -3111,7 +3610,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -3142,7 +3646,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -3173,7 +3682,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -3204,7 +3718,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -3235,7 +3754,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -3266,7 +3790,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -3297,7 +3826,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -3328,7 +3862,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -3359,7 +3898,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -3390,7 +3934,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -3421,7 +3970,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -3452,7 +4006,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -3483,7 +4042,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -3514,7 +4078,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -3545,7 +4114,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -3576,7 +4150,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -3607,7 +4186,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -3638,7 +4222,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -3669,7 +4258,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -3704,7 +4298,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -3755,7 +4354,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -3786,7 +4390,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -3817,7 +4426,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -3848,7 +4462,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -3879,7 +4498,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -3910,7 +4534,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -3941,7 +4570,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -3972,7 +4606,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -4003,7 +4642,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -4034,7 +4678,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -4065,7 +4714,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -4096,7 +4750,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -4127,7 +4786,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -4158,7 +4822,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -4189,7 +4858,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -4220,7 +4894,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -4251,7 +4930,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -4282,7 +4966,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -4313,7 +5002,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -4344,7 +5038,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -4375,7 +5074,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -4406,7 +5110,12 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
@@ -4437,11 +5146,15 @@
                     ]
                 ]
             },
-            "properties": {}
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
+            }
         },
         {
             "type": "Feature",
-            "properties": {},
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -4468,11 +5181,16 @@
                         ]
                     ]
                 ]
+            },
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
             }
         },
         {
             "type": "Feature",
-            "properties": {},
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -4499,11 +5217,16 @@
                         ]
                     ]
                 ]
+            },
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
             }
         },
         {
             "type": "Feature",
-            "properties": {},
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -4530,11 +5253,16 @@
                         ]
                     ]
                 ]
+            },
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
             }
         },
         {
             "type": "Feature",
-            "properties": {},
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -4561,11 +5289,16 @@
                         ]
                     ]
                 ]
+            },
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
             }
         },
         {
             "type": "Feature",
-            "properties": {},
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -4592,11 +5325,16 @@
                         ]
                     ]
                 ]
+            },
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
             }
         },
         {
             "type": "Feature",
-            "properties": {},
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -4623,11 +5361,16 @@
                         ]
                     ]
                 ]
+            },
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
             }
         },
         {
             "type": "Feature",
-            "properties": {},
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -4654,11 +5397,16 @@
                         ]
                     ]
                 ]
+            },
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
             }
         },
         {
             "type": "Feature",
-            "properties": {},
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -4685,11 +5433,16 @@
                         ]
                     ]
                 ]
+            },
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
             }
         },
         {
             "type": "Feature",
-            "properties": {},
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -4716,11 +5469,16 @@
                         ]
                     ]
                 ]
+            },
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
             }
         },
         {
             "type": "Feature",
-            "properties": {},
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -4747,11 +5505,16 @@
                         ]
                     ]
                 ]
+            },
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
             }
         },
         {
             "type": "Feature",
-            "properties": {},
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -4778,11 +5541,16 @@
                         ]
                     ]
                 ]
+            },
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
             }
         },
         {
             "type": "Feature",
-            "properties": {},
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -4809,11 +5577,16 @@
                         ]
                     ]
                 ]
+            },
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
             }
         },
         {
             "type": "Feature",
-            "properties": {},
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -4840,11 +5613,16 @@
                         ]
                     ]
                 ]
+            },
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
             }
         },
         {
             "type": "Feature",
-            "properties": {},
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -4871,11 +5649,16 @@
                         ]
                     ]
                 ]
+            },
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
             }
         },
         {
             "type": "Feature",
-            "properties": {},
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -4918,11 +5701,16 @@
                         ]
                     ]
                 ]
+            },
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
             }
         },
         {
             "type": "Feature",
-            "properties": {},
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -4949,11 +5737,16 @@
                         ]
                     ]
                 ]
+            },
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
             }
         },
         {
             "type": "Feature",
-            "properties": {},
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -4996,11 +5789,16 @@
                         ]
                     ]
                 ]
+            },
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
             }
         },
         {
             "type": "Feature",
-            "properties": {},
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -5035,6 +5833,12 @@
                         ]
                     ]
                 ]
+            },
+            "properties": {
+                "id_local": 0,
+                "nome": 0,
+                "id_bloco": 0,
+                "tipo": 0
             }
         }
     ]

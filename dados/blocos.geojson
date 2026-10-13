@@ -95,9 +95,9 @@
                 ]
             },
             "properties": {
-                "id_bloco": 3,
+                "id_bloco": "03",
                 "nome": "Bloco C",
-                "id_campus": 1,
+                "id_campus": "01",
                 "fill": "#A8BCFF",
                 "fill-opacity": 0.4,
                 "stroke": "rgba(40, 145, 231, 1)",
@@ -143,9 +143,9 @@
                 ]
             },
             "properties": {
-                "id_bloco": 2,
+                "id_bloco": "01",
                 "nome": "Bloco B",
-                "id_campus": 1,
+                "id_campus": "01",
                 "fill": "#A8BCFF",
                 "fill-opacity": 0.4,
                 "stroke": "rgba(40, 145, 231, 1)",
@@ -191,9 +191,9 @@
                 ]
             },
             "properties": {
-                "id_bloco": "1",
+                "id_bloco": "02",
                 "nome": "Bloco A",
-                "id_campus": 1,
+                "id_campus": "01",
                 "fill": "#A8BCFF",
                 "fill-opacity": 0.4,
                 "stroke": "rgba(40, 145, 231, 1)",
@@ -251,7 +251,7 @@
                 ]
             },
             "properties": {
-                "id_bloco": 4,
+                "id_bloco": "04",
                 "nome": "Bloco D",
                 "id_campus": 2,
                 "stroke-opacity": 1,
