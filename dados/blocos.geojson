@@ -97,12 +97,7 @@
             "properties": {
                 "id_bloco": "03",
                 "nome": "Bloco C",
-                "id_campus": "01",
-                "fill": "#A8BCFF",
-                "fill-opacity": 0.4,
-                "stroke": "rgba(40, 145, 231, 1)",
-                "stroke-width": 1,
-                "stroke-opacity": 1
+                "id_campus": "01"
             }
         },
         {
@@ -372,6 +367,68 @@
                 ]
             },
             "properties": {}
+        },
+        {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -57.172851,
+                            -15.063233
+                        ],
+                        [
+                            -57.172851,
+                            -15.063233
+                        ],
+                        [
+                            -57.172851,
+                            -15.063233
+                        ],
+                        [
+                            -57.172851,
+                            -15.063233
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nome": "Laboratórios de Pós-graduação",
+                "Id_bloco": "04",
+                "id_campus": "01"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -57.172842,
+                            -15.063343
+                        ],
+                        [
+                            -57.172842,
+                            -15.063752
+                        ],
+                        [
+                            -57.172526,
+                            -15.063752
+                        ],
+                        [
+                            -57.172526,
+                            -15.063343
+                        ],
+                        [
+                            -57.172842,
+                            -15.063343
+                        ]
+                    ]
+                ]
+            }
         }
     ]
 }
