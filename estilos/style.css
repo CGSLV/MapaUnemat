@@ -259,7 +259,7 @@ header {
     background: transparent;
     border:none;
     box-shadow: none;
-    /*padding: 0* - Deixe um pouco de padding para os nomes não ficarem grudados e dificeis de ler*/ 
+    /*padding: 0* - Os nomes ficam mais centralizados de longe com um pouco de padding, retire se necessário*/ 
     color:#222; /*cor do texto*/
     font-size: 1rem; /*1 rem = 16px*/
     font-weight: bold;
@@ -272,4 +272,3 @@ header {
      1px  1px 0 white; 
 }
 
-.leaflet-too
