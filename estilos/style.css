@@ -1,11 +1,15 @@
 @charset "UTF-8";
+/* Carrega a fonte Roboto e permite mostrar uma fonte alternativa durante o download. */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Remove espaçamentos padrão; largura e altura passam a incluir bordas e preenchimento. */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* Variáveis de cores e medidas que podem ser reutilizadas com var(--nome). */
 :root {
   --cabecalho: #2E7897;
   --unemat-azul-escuro: #286A84;
@@ -22,12 +26,14 @@
   --raio-cartao: 6px;
 }
 
+/* Organiza a página em coluna e limita seu conteúdo à altura da janela. */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     background-color: lightgray;
     display: flex;
     flex-direction: column;
     height: 100vh;
+    /* Ajusta a altura quando as barras do navegador móvel aparecem ou desaparecem. */
     height: 100dvh;
     overflow: hidden;
 }
@@ -47,12 +53,14 @@ header {
 }
 
 
+/* Faixa de transição entre o cabeçalho e o mapa, sem encolher no layout. */
 .barra-degrade {
     height: 20px;
     flex-shrink: 0;
     background: linear-gradient(to right, var(--unemat-verde-claro) 95%,var(--unemat-azul-escuro) 100%);
 }
 
+/* Mantém as proporções do brasão ao definir sua altura. */
 #brasao img {
     padding-left: 5px;
     display: block;
@@ -66,6 +74,7 @@ header {
     display: none;
 }
 
+/* Tamanho e espaço lateral da versão horizontal do logotipo. */
 #logotipo img {
     padding-left: 10px;
     display: block;
@@ -77,12 +86,14 @@ header {
 /* O mapa ocupa apenas o espaço que sobra abaixo do cabeçalho. (Para o cabeçalo não desaparecer quando clicar no zoom) */
 #map {
     flex: 1;
+    /* Permite que o mapa encolha dentro do flexbox sem empurrar o cabeçalho. */
     min-height: 0;
     width: 100%;
 }
 
-/* Configurações botão de localização do usuário*/
-.botao-localizacao {
+/* Estilo compartilhado pelos botões de localização e de menu de andares. A moldura vem do Leaflet. */
+.botao-localizacao,
+.botao-menu-andares {
     width: 44px;
     height: 44px;
     display: flex;
@@ -95,12 +106,82 @@ header {
     cursor: pointer;
 }
 
+/* Indica visualmente que a busca de localização está em andamento. */
 .botao-localizacao:disabled {
     opacity: 0.5;
     cursor: wait;
 }
 
+/* Destaca o botão quando ele recebe foco pela navegação com teclado. */
 .botao-localizacao:focus-visible {
+    outline: 3px solid var(--unemat-azul-escuro);
+    outline-offset: 2px;
+}
+
+/* Empilha o menu de andares e seu botão, alinhando-os à direita. */
+.controle-andares {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 6px;
+    margin-bottom: 8px;
+}
+
+/* Organiza verticalmente os botões 2 e 1 com espaço entre eles. */
+.opcoes-andares {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* Faz o atributo hidden prevalecer sobre o display flex quando o menu está fechado. */
+.opcoes-andares[hidden] {
+    display: none;
+}
+
+/* Usa o SVG como máscara e pinta seu desenho com a cor herdada do botão. */
+.icone-menu-andares {
+    width: 24px;
+    height: 24px;
+    background-color: currentColor;
+    /* A versão com prefixo atende navegadores que ainda exigem -webkit-mask. */
+    -webkit-mask: url("../imagens/layer-group-solid-full.svg") center / contain no-repeat;
+    mask: url("../imagens/layer-group-solid-full.svg") center / contain no-repeat;
+}
+
+/* Contorno de foco do botão que abre e fecha o menu de andares. */
+.botao-menu-andares:focus-visible {
+    outline: 3px solid var(--unemat-azul-escuro);
+    outline-offset: 2px;
+}
+
+/* Aparência dos botões numéricos de seleção de andar. */
+.botao-andar {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #999;
+    border-radius: 2px;
+    background: white;
+    color: var(--texto);
+    font: 700 16px Roboto, Arial, sans-serif;
+    cursor: pointer;
+    box-shadow: 0 1px 4px #0005;
+}
+
+/* Destaca o andar selecionado; esse atributo é atualizado pelo JavaScript. */
+.botao-andar[aria-pressed="true"] {
+    background: var(--unemat-azul-escuro);
+    color: white;
+}
+
+/* Estado de espera enquanto as camadas dos andares ainda estão sendo carregadas. */
+.botao-andar:disabled {
+    opacity: 0.5;
+    cursor: wait;
+}
+
+/* Realça a opção de andar focada pelo teclado. */
+.botao-andar:focus-visible {
     outline: 3px solid var(--unemat-azul-escuro);
     outline-offset: 2px;
 }
@@ -112,6 +193,7 @@ header {
     border-radius: 4px;
 }
 
+/* Dimensões, espaçamento e texto dos botões Mapa e Satélite. */
 .botao-fundo {
     min-height: 30px;
     padding: 0 12px;
@@ -122,16 +204,17 @@ header {
     cursor: pointer;
 }
 
-/* Configurações de quando o botão de fundo está ativado muda a cor*/
+/* Arredonda somente os cantos externos do primeiro botão, Mapa. */
 .botao-fundo:first-child {
     border-radius: 2px 0 0 2px;
 }
 
+/* Arredonda somente os cantos externos do segundo botão, Satélite. */
 .botao-fundo:nth-child(2) {
     border-radius: 0 2px 2px 0;
 }
 
-/* Muda a cor do fundo quando clicado */
+/* Destaca o fundo atualmente selecionado por meio do atributo aria-pressed. */
 .botao-fundo[aria-pressed="true"] {
     background: var(--unemat-azul-escuro);
     color: white;
@@ -141,6 +224,7 @@ header {
 /* Botão HOME*/
 .botao-home {
     position: absolute;
+    /* Coloca o botão Home à esquerda do grupo Mapa/Satélite, com 8 pixels de distância. */
     right: calc(100% + 8px);
     top: 0;
     width: 40px;
@@ -155,6 +239,7 @@ header {
     margin-top: -7px
 }
 
+/* Mantém o botão Home identificável durante a navegação por teclado. */
 .botao-home:focus-visible {
     outline: 3px solid var(--unemat-azul-escuro);
     outline-offset: 2px;
