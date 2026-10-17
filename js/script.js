@@ -1,21 +1,29 @@
 
 // Inicializando o mapa com Openstreetmap
-const map = L.map('map').setView([-15.0644268, -57.17288757], 19);
+const map = L.map('map', {
+    maxZoom: 22,
+    // Desenha também ao redor da tela para manter os polígonos durante o arraste.
+    renderer: L.svg({ padding: 1 })
+}).setView([-15.0644268, -57.17288757], 19);
+
+
+
+// Carrega os quadrados de imagem do OpenStreetMap e define este como fundo inicial.
+const camadaMapa = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxNativeZoom: 19,
+    maxZoom: 22,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
 
 // Coloca os controles de zoom no canto inferior direito
 map.zoomControl.setPosition('bottomright');
 
-// Carrega os quadrados de imagem do OpenStreetMap e define este como fundo inicial.
-const camadaMapa = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-}).addTo(map);
-
 // Prepara o fundo de satélite; ele só aparece quando o usuário seleciona Satélite.
 const camadaSatelite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
     // Acima do nível 17, amplia as imagens disponíveis em vez de pedir imagens mais detalhadas.
+    // Necessário, pois sem isso os poligonos tem uma delay a serem desenhados quando a tela arrasta
     maxNativeZoom: 17,
-    maxZoom: 19,
+    maxZoom: 22,
     attribution: 'Tiles &copy; Esri — Source: Esri, Maxar, Earthstar Geographics, and the GIS User Community'
 });
 
@@ -218,13 +226,34 @@ function carregarGeoJSON(arquivo, cor, tipo) {
             return resposta.json();
         })
         .then(dados => {
-            // Estilo compartilhado: contorno de 2 pixels e preenchimento com 15% de opacidade.
+            // Propriedades dos poligonos desenhados
             const opcoes = {
+                // Evita recortar a geometria no limite da área visível.
+                noClip: true,
                 style: {
                     color: cor,
                     weight: 2,
                     fillOpacity: 0.15
-                }
+                },
+
+                //Pega o nome de cada elemento do GeoJSON
+                //onEachFeature -> Função do leaflet que executa para cada elemento geografico
+                onEachFeature: function (feature, layer) {
+                    const nome = feature.properties?.nome;
+                    if (!nome) return;
+
+                //Pega o nome e adiciona no HTML
+                const rotulo = document.createElement('span');
+                rotulo.textContent = nome;
+
+
+                // Método do Leaflet para anexar um rótulo/etiqueta a uma camada do mapa, neste caso um poligono
+                layer.bindTooltip(rotulo,{
+                    permanent:true, // Sempre visível
+                    direction: 'center', // No centro do polígono (nem todos podem ficar no centro se não fica dificil de ler)
+                    className: 'nome-local' // Classe dada a etiqueta para personalização, o padrão é os nomes em um balão
+                });
+                }   
             };
 
             if (tipo === 'salas') {

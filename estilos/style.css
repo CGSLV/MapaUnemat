@@ -253,3 +253,14 @@ header {
     line-height: 44px;
     font-size: 26px;
 }
+
+/* Configurações dos nomes dos locais */
+.leaflet-tooltip.nome-local {
+    background: transparent;
+    border:nome;
+    box-shadow: none;
+    /*padding: 0* - Deixe um pouco de padding para os nomes não ficarem grudados e dificeis de ler*/ 
+    color:#222; /*cor do texto*/
+    font-size: 12px;
+    font-weight: bold;
+}

@@ -1,18 +1,17 @@
-/* A partir de 768 pixels de largura, aumenta o brasão para telas maiores. */
 @media screen and (min-width: 768px) {
     #brasao img {
-        height: 72px;
+        height: 72px;  /*Aumenta o brasão em telas de tablet*/
     }
 }
 
-/* A partir de 1024 pixels, troca o brasão pelo logotipo horizontal. */
+
 @media screen and (min-width: 1024px) {
-    /* Oculta o link que contém o brasão. */
+    /*Esconde o brasão*/
     #brasao {
         display: none;
     }
 
-    /* Exibe o logotipo que fica oculto nas larguras menores. */
+    /* Mostra a logo*/
     #logotipo {
         display: block;
     }
