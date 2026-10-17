@@ -257,10 +257,19 @@ header {
 /* Configurações dos nomes dos locais */
 .leaflet-tooltip.nome-local {
     background: transparent;
-    border:nome;
+    border:none;
     box-shadow: none;
     /*padding: 0* - Deixe um pouco de padding para os nomes não ficarem grudados e dificeis de ler*/ 
     color:#222; /*cor do texto*/
-    font-size: 12px;
+    font-size: 1rem; /*1 rem = 16px*/
     font-weight: bold;
+
+    /* Contorno da letra */
+     text-shadow: 
+    -1px -1px 0 white,  
+     1px -1px 0 white,
+    -1px  1px 0 white,
+     1px  1px 0 white; 
 }
+
+.leaflet-too
