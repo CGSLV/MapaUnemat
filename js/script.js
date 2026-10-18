@@ -212,6 +212,20 @@ controleAndares.onAdd = function () {
 };
 controleAndares.addTo(map);
 
+// Cores pelo tipo da sala
+const coresPorTipo = {
+    sala: '#4A90E2',
+    laboratorio: '#9B59B6',
+    banheiro: '#2c57e6',
+    administrativo: '#F39C12',
+    auditorio: '#E74C3C',
+    circulacao: '#95A5A6',
+    academico: '#F1C40F',
+    desconhecido: '#BDC3C7'
+};
+
+
+
 // Lê um arquivo GeoJSON e desenha seus polígonos com a cor recebida.
 function carregarGeoJSON(arquivo, cor, tipo) {
     // O carregamento é assíncrono: os próximos passos executam quando a resposta chega.
@@ -230,10 +244,24 @@ function carregarGeoJSON(arquivo, cor, tipo) {
             const opcoes = {
                 // Evita recortar a geometria no limite da área visível.
                 noClip: true,
-                style: {
-                    color: cor,
-                    weight: 2,
-                    fillOpacity: 0.15
+                style: function (feature) {
+                    // Mantém a cor recebida para campus e blocos.
+                    let corLocal = cor;
+
+                    // Para salas e demais ambientes, escolhe pelo tipo.
+                    if (tipo === 'salas') {
+                        const tipoLocal = feature.properties?.tipo;
+
+                        // Usa cinza quando o tipo não está na tabela.
+                        corLocal = coresPorTipo[tipoLocal] ?? '#BDC3C7';
+                    }
+
+                    return {
+                        color: '#000000',     // Cor da borda preto para melhor visualização
+                        fillColor: corLocal, // Cor do preenchimento.
+                        weight: 2,          // Espessura do contorno.
+                        fillOpacity: 0.5    // Intensidade do preenchimento.
+                    };
                 },
 
                 //Pega o nome de cada elemento do GeoJSON

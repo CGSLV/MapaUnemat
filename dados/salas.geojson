@@ -5930,12 +5930,6 @@
         },
         {
             "type": "Feature",
-            "properties": {
-                "id_local": 158,
-                "nome": "FOCCO",
-                "id_bloco": "01",
-                "tipo": "academico"
-            },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -5970,6 +5964,12 @@
                         ]
                     ]
                 ]
+            },
+            "properties": {
+                "id_local": 158,
+                "nome": "FOCCO",
+                "id_bloco": "01",
+                "tipo": "academico"
             }
         }
     ]
