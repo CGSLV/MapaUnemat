@@ -2034,7 +2034,7 @@
             },
             "properties": {
                 "id_local": "09",
-                "nome": "Laboratório de Informática I",
+                "nome": "Lab. de Informática I",
                 "id_bloco": "02",
                 "tipo": "laboratorio"
             }
@@ -2070,7 +2070,7 @@
             },
             "properties": {
                 "id_local": "11",
-                "nome": "Laboratório de Informática II",
+                "nome": "Lab. de Informática II",
                 "id_bloco": "02",
                 "tipo": "laboratorio"
             }
@@ -2106,7 +2106,7 @@
             },
             "properties": {
                 "id_local": "12",
-                "nome": "Laboratório de Informática III",
+                "nome": "Lab. de Informática III",
                 "id_bloco": "02",
                 "tipo": "laboratorio"
             }
@@ -2178,7 +2178,7 @@
             },
             "properties": {
                 "id_local": "07",
-                "nome": "Laboratório de Redes",
+                "nome": "Lab. de Redes",
                 "id_bloco": "02",
                 "tipo": "laboratorio"
             }
@@ -2375,7 +2375,7 @@
                     [
                         [
                             -57.173046,
-                            -15.064586
+                            -15.064585
                         ],
                         [
                             -57.173046,
@@ -2387,11 +2387,11 @@
                         ],
                         [
                             -57.172995,
-                            -15.064586
+                            -15.064585
                         ],
                         [
                             -57.173046,
-                            -15.064586
+                            -15.064585
                         ]
                     ]
                 ]
@@ -5926,6 +5926,50 @@
                 "nome": "Refeitório",
                 "id_campus": "03",
                 "tipo": "academico"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id_local": 158,
+                "nome": "FOCCO",
+                "id_bloco": "01",
+                "tipo": "academico"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -57.172918,
+                            -15.064372
+                        ],
+                        [
+                            -57.172955,
+                            -15.06439
+                        ],
+                        [
+                            -57.172954,
+                            -15.064438
+                        ],
+                        [
+                            -57.172918,
+                            -15.064456
+                        ],
+                        [
+                            -57.172884,
+                            -15.064438
+                        ],
+                        [
+                            -57.172884,
+                            -15.06439
+                        ],
+                        [
+                            -57.172918,
+                            -15.064372
+                        ]
+                    ]
+                ]
             }
         }
     ]

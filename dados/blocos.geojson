@@ -227,7 +227,7 @@
                             -15.067967
                         ],
                         [
-                            -57.174709,
+                            -57.174704,
                             -15.067967
                         ],
                         [
@@ -425,7 +425,7 @@
                 ]
             },
             "properties": {
-                "nome": "Laboratórios de Pós-graduação",
+                "nome": "Labs. de Pós-graduação",
                 "Id_bloco": "04",
                 "id_campus": "01"
             }

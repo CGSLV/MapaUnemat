@@ -251,7 +251,14 @@ function carregarGeoJSON(arquivo, cor, tipo) {
                 layer.bindTooltip(rotulo,{
                     permanent:true, // Sempre visível
                     direction: 'center', // No centro do polígono (nem todos podem ficar no centro se não fica dificil de ler)
-                    className: 'nome-local' // Classe dada a etiqueta para personalização, o padrão é os nomes em um balão
+                    className: 'nome-local', // Classe dada a etiqueta para personalização, o padrão é os nomes em um balão
+                
+                    // Nome das salas ficam em uma camada que controlamos pelo zoom, mantem campus e blocos
+                    pane: tipo === 'salas'
+                        ? 'nomesSalas'
+                        : tipo === 'blocos'
+                            ? 'nomesBlocos'
+                            : 'tooltipPane'
                 });
                 }   
             };
@@ -287,6 +294,71 @@ function carregarGeoJSON(arquivo, cor, tipo) {
             console.error("Erro ao carregar GeoJSON:", erro);
         });
 }
+
+// Código para os nomes das salas aparecerem apenas com determinado zoom
+const nomesSalas = map.createPane('nomesSalas');
+nomesSalas.style.zIndex = 650;
+nomesSalas.style.pointerEvents = 'none';
+
+// Define quando os nomes das salas ficam visíveis.
+function atualizarNomesSalas(){
+    const zoom = map.getZoom();
+    const mostrar = zoom >= 21;
+
+
+    // Mantém as dimensões das etiquetas disponíveis para o Leaflet.
+    // display:none zerava essas medidas durante o cálculo do primeiro zoom.
+    nomesSalas.style.opacity = mostrar ? '1' : '0';
+
+    // Recalcula depois que o Leaflet termina de atualizar as camadas do zoom.
+    // Percorre apenas os elementos presentes no mapa, respeitando o andar ativo.
+    requestAnimationFrame(function () {
+        map.eachLayer(function (layer) {
+            const etiqueta = layer.getTooltip?.();
+            if (etiqueta?.options.pane === 'nomesSalas' && etiqueta.isOpen()) {
+                etiqueta.update();
+                //Evita um bug visual dos nomes das salas aparecerem muito pra direita quando 
+                // o zoom chega no valor selecionado pela para os nomes aparecerem pela primeira vez
+            }
+        });
+    });
+}
+
+// Código para os nomes dos blocos aparecerem apenas com determinado zoom
+const nomesBlocos = map.createPane('nomesBlocos');
+nomesBlocos.style.zIndex = 650;
+nomesBlocos.style.pointerEvents = 'none';
+
+function atualizarNomesBlocos() {
+    // Exibe a partir do zoom 18; esconde abaixo dele.
+    const mostrar = map.getZoom() >= 18;
+
+    nomesBlocos.style.opacity = mostrar ? '1' : '0';
+
+    // Atualiza a posição após a mudança de zoom.
+    requestAnimationFrame(function () {
+        map.eachLayer(function (layer) {
+            const etiqueta = layer.getTooltip?.();
+
+            if (
+                etiqueta?.options.pane === 'nomesBlocos' &&
+                etiqueta.isOpen()
+            ) {
+                etiqueta.update();
+            }
+        });
+    });
+}
+
+
+
+
+//Atualiza quando o usuario der zoom in ou out
+map.on('zoomend', atualizarNomesSalas);
+map.on('zoomend', atualizarNomesBlocos);
+
+atualizarNomesSalas();
+
 
 // Carregando os GeoJson no mapa por camadas
 carregarGeoJSON("dados/campus.geojson", "#9be5ae", "campus");
