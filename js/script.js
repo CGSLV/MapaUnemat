@@ -331,7 +331,7 @@ nomesSalas.style.pointerEvents = 'none';
 // Define quando os nomes das salas ficam visíveis.
 function atualizarNomesSalas(){
     const zoom = map.getZoom();
-    const mostrar = zoom >= 21;
+    const mostrar = zoom >= 20;
 
 
     // Mantém as dimensões das etiquetas disponíveis para o Leaflet.
@@ -389,6 +389,6 @@ atualizarNomesSalas();
 
 
 // Carregando os GeoJson no mapa por camadas
-carregarGeoJSON("dados/campus.geojson", "#9be5ae", "campus");
-carregarGeoJSON("dados/blocos.geojson", "#54bbe4", "blocos");
+carregarGeoJSON("dados/campus.geojson", "#9be5aeab", "campus");
+carregarGeoJSON("dados/blocos.geojson", "#54bbe4ce", "blocos");
 carregarGeoJSON("dados/salas.geojson", "#3f2f1e", "salas");

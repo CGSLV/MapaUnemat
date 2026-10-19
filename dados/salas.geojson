@@ -8,6 +8,53 @@
                 "coordinates": [
                     [
                         [
+                            -57.173076,
+                            -15.064159
+                        ],
+                        [
+                            -57.173157,
+                            -15.064159
+                        ],
+                        [
+                            -57.173157,
+                            -15.0642
+                        ],
+                        [
+                            -57.173076,
+                            -15.0642
+                        ],
+                        [
+                            -57.173076,
+                            -15.064159
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "id_local": 34,
+                "nome": "CAEST",
+                "id_bloco": "01",
+                "tipo": "administrativo",
+                "palavras_chave": [
+                    "caest",
+                    "centro de assuntos estudantis",
+                    "centro estudantis",
+                    "centro"
+                ],
+                "nome_completo": "Centro de Assuntos Estudantis",
+                "contato": {
+                    "telefone": "(65) 3361-6498",
+                    "email": "caest.bbg@unemat.br"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
                             -57.1732,
                             -15.063734
                         ],
@@ -35,7 +82,11 @@
                 "nome": "C1",
                 "id_bloco": "03",
                 "tipo": "sala",
-                "andar": 0
+                "andar": 0,
+                "palavras_chave": [
+                    "C1",
+                    "sala"
+                ]
             }
         },
         {
@@ -72,7 +123,11 @@
                 "nome": "C9",
                 "id_bloco": "03",
                 "tipo": "sala",
-                "andar": 0
+                "andar": 0,
+                "palavras_chave": [
+                    "C9",
+                    "sala"
+                ]
             }
         },
         {
@@ -109,7 +164,11 @@
                 "nome": "C11",
                 "id_bloco": "03",
                 "tipo": "sala",
-                "andar": 0
+                "andar": 0,
+                "palavras_chave": [
+                    "C11",
+                    "sala"
+                ]
             }
         },
         {
@@ -146,7 +205,11 @@
                 "nome": "C7",
                 "id_bloco": "03",
                 "tipo": "sala",
-                "andar": 0
+                "andar": 0,
+                "palavras_chave": [
+                    "C7",
+                    "sala"
+                ]
             }
         },
         {
@@ -183,7 +246,11 @@
                 "nome": "C5",
                 "id_bloco": "03",
                 "tipo": "sala",
-                "andar": 0
+                "andar": 0,
+                "palavras_chave": [
+                    "C5",
+                    "sala"
+                ]
             }
         },
         {
@@ -220,7 +287,11 @@
                 "nome": "C15",
                 "id_bloco": "03",
                 "tipo": "sala",
-                "andar": 0
+                "andar": 0,
+                "palavras_chave": [
+                    "C15",
+                    "sala"
+                ]
             }
         },
         {
@@ -257,7 +328,11 @@
                 "nome": "C3",
                 "id_bloco": "03",
                 "tipo": "sala",
-                "andar": 0
+                "andar": 0,
+                "palavras_chave": [
+                    "C3",
+                    "sala"
+                ]
             }
         },
         {
@@ -294,7 +369,11 @@
                 "nome": "C19",
                 "id_bloco": "03",
                 "tipo": "sala",
-                "andar": 0
+                "andar": 0,
+                "palavras_chave": [
+                    "C19",
+                    "sala"
+                ]
             }
         },
         {
@@ -331,7 +410,11 @@
                 "nome": "C17",
                 "id_bloco": "03",
                 "tipo": "sala",
-                "andar": 0
+                "andar": 0,
+                "palavras_chave": [
+                    "C17",
+                    "sala"
+                ]
             }
         },
         {
@@ -368,7 +451,11 @@
                 "nome": "C13",
                 "id_bloco": "03",
                 "tipo": "sala",
-                "andar": 0
+                "andar": 0,
+                "palavras_chave": [
+                    "C13",
+                    "sala"
+                ]
             }
         },
         {
@@ -440,7 +527,13 @@
                 "id_local": 108,
                 "nome": "Banheiro Masculino",
                 "id_bloco": "04",
-                "tipo": "banheiro"
+                "tipo": "banheiro",
+                "palavras_chave": [
+                    "banheiro",
+                    "banheiro masculino",
+                    "banherio masculino ppgee",
+                    "banheiro ppgee"
+                ]
             }
         },
         {
@@ -476,7 +569,11 @@
                 "id_local": 111,
                 "nome": "Sala PPGEE",
                 "id_bloco": "04",
-                "tipo": "sala"
+                "tipo": "sala",
+                "palavras_chave": [
+                    "sala ppgee",
+                    "ppgee"
+                ]
             }
         },
         {
@@ -546,9 +643,14 @@
             },
             "properties": {
                 "id_local": 102,
-                "nome": "Olimpíadas de Matemática",
+                "nome": "Olimpíada",
                 "id_bloco": "04",
-                "tipo": "laboratorio"
+                "tipo": "laboratorio",
+                "palavras_chave": [
+                    "sala de olimpiada",
+                    "olimpiada",
+                    "olimpiadas de matematica"
+                ]
             }
         },
         {
@@ -584,7 +686,13 @@
                 "id_local": 100,
                 "nome": "LSMD",
                 "id_bloco": "04",
-                "tipo": "laboratorio"
+                "tipo": "laboratorio",
+                "palavras_chave": [
+                    "LSMD",
+                    "lsmd",
+                    "laboratorio de simulacao e manufatura digital"
+                ],
+                "nome_completo": "Laboratório de Simulação e Manufatura Digital"
             }
         },
         {
@@ -620,7 +728,13 @@
                 "id_local": 99,
                 "nome": "CEPEM",
                 "id_bloco": "04",
-                "tipo": "laboratorio"
+                "tipo": "laboratorio",
+                "palavras_chave": [
+                    "CEPEM",
+                    "cepem",
+                    "Centro de Pesquisa e Ensino em Matemática"
+                ],
+                "nome_completo": "Centro de Pesquisa e Ensino em Matemática"
             }
         },
         {
@@ -656,7 +770,12 @@
                 "id_local": 97,
                 "nome": "Banheiro Feminino",
                 "id_bloco": "04",
-                "tipo": "banheiro"
+                "tipo": "banheiro",
+                "palavras_chave": [
+                    "banheiro",
+                    "banheiro feminino",
+                    "banheiro ctmat"
+                ]
             }
         },
         {
@@ -1017,7 +1136,11 @@
                 "nome": "C10",
                 "id_bloco": "03",
                 "tipo": "sala",
-                "andar": 1
+                "andar": 1,
+                "palavras_chave": [
+                    "C10",
+                    "sala"
+                ]
             }
         },
         {
@@ -1054,7 +1177,11 @@
                 "nome": "C12",
                 "id_bloco": "03",
                 "tipo": "sala",
-                "andar": 1
+                "andar": 1,
+                "palavras_chave": [
+                    "C12",
+                    "sala"
+                ]
             }
         },
         {
@@ -1091,7 +1218,10 @@
                 "nome": "Laboratório de Arquitetura",
                 "id_bloco": "03",
                 "tipo": "laboratorio",
-                "andar": 1
+                "andar": 1,
+                "palavras_chave": [
+                    "laboratorio de arquitetura"
+                ]
             }
         },
         {
@@ -1128,7 +1258,11 @@
                 "nome": "C4",
                 "id_bloco": "03",
                 "tipo": "sala",
-                "andar": 1
+                "andar": 1,
+                "palavras_chave": [
+                    "C4",
+                    "sala"
+                ]
             }
         },
         {
@@ -1165,7 +1299,11 @@
                 "nome": "C2",
                 "id_bloco": "03",
                 "tipo": "sala",
-                "andar": 1
+                "andar": 1,
+                "palavras_chave": [
+                    "C2",
+                    "sala"
+                ]
             }
         },
         {
@@ -1202,7 +1340,11 @@
                 "nome": "C16",
                 "id_bloco": "03",
                 "tipo": "sala",
-                "andar": 1
+                "andar": 1,
+                "palavras_chave": [
+                    "C16",
+                    "sala"
+                ]
             }
         },
         {
@@ -1239,7 +1381,11 @@
                 "nome": "C14",
                 "id_bloco": "03",
                 "tipo": "sala",
-                "andar": 1
+                "andar": 1,
+                "palavras_chave": [
+                    "C14",
+                    "sala"
+                ]
             }
         },
         {
@@ -1276,7 +1422,11 @@
                 "nome": "C6",
                 "id_bloco": "03",
                 "tipo": "sala",
-                "andar": 1
+                "andar": 1,
+                "palavras_chave": [
+                    "C6",
+                    "sala"
+                ]
             }
         },
         {
@@ -1312,7 +1462,13 @@
                 "id_local": "49",
                 "nome": "Lab. de Robótica",
                 "id_bloco": "01",
-                "tipo": "laboratorio"
+                "tipo": "laboratorio",
+                "palavras_chave": [
+                    "laboratorio de robotica",
+                    "robotica",
+                    "lab robotica",
+                    "laboratorio robotica"
+                ]
             }
         },
         {
@@ -1348,7 +1504,11 @@
                 "id_local": "61",
                 "nome": "Banheiro",
                 "id_bloco": "01",
-                "tipo": "banheiro"
+                "tipo": "banheiro",
+                "palavras_chave": [
+                    "banheiro",
+                    "banheiro NPJ"
+                ]
             }
         },
         {
@@ -1456,7 +1616,11 @@
                 "id_local": 65,
                 "nome": "Psicóloga",
                 "id_bloco": "01",
-                "tipo": "administrativo"
+                "tipo": "administrativo",
+                "palavras_chave": [
+                    "psicologa",
+                    "sala psicologa"
+                ]
             }
         },
         {
@@ -1492,7 +1656,11 @@
                 "id_local": 62,
                 "nome": "Banheiro",
                 "id_bloco": "01",
-                "tipo": "banheiro"
+                "tipo": "banheiro",
+                "palavras_chave": [
+                    "banheiro",
+                    "banheiro NPJ"
+                ]
             }
         },
         {
@@ -1568,7 +1736,12 @@
                 "id_local": 31,
                 "nome": "B3",
                 "id_bloco": "01",
-                "tipo": "sala"
+                "tipo": "sala",
+                "palavras_chave": [
+                    "B3",
+                    "sala"
+                ],
+                "capacidade": 20
             }
         },
         {
@@ -1604,7 +1777,10 @@
                 "id_local": 27,
                 "nome": "Diretoria",
                 "id_bloco": "01",
-                "tipo": "administrativo"
+                "tipo": "administrativo",
+                "palavras_chave": [
+                    "diretoria"
+                ]
             }
         },
         {
@@ -1640,7 +1816,11 @@
                 "id_local": 20,
                 "nome": "Sala de Reunião",
                 "id_bloco": "01",
-                "tipo": "administrativo"
+                "tipo": "administrativo",
+                "palavras_chave": [
+                    "sala de reuniao",
+                    "reuniao"
+                ]
             }
         },
         {
@@ -1676,7 +1856,10 @@
                 "id_local": 19,
                 "nome": "Projetos de Arquitetura",
                 "id_bloco": "01",
-                "tipo": "laboratorio"
+                "tipo": "laboratorio",
+                "palavras_chave": [
+                    "projetos de arquitetura"
+                ]
             }
         },
         {
@@ -1712,7 +1895,12 @@
                 "id_local": "24",
                 "nome": "Banheiro Masculino",
                 "id_bloco": "01",
-                "tipo": "banheiro"
+                "tipo": "banheiro",
+                "palavras_chave": [
+                    "banheiro",
+                    "banheiro masculino",
+                    "banheiro bloco B"
+                ]
             }
         },
         {
@@ -1748,7 +1936,12 @@
                 "id_local": "23",
                 "nome": "Banheiro Feminino",
                 "id_bloco": "01",
-                "tipo": "banheiro"
+                "tipo": "banheiro",
+                "palavras_chave": [
+                    "banheiro",
+                    "banheiro feminino",
+                    "banheiro bloco B"
+                ]
             }
         },
         {
@@ -1784,7 +1977,11 @@
                 "id_local": "41",
                 "nome": "Banheiro Masculino",
                 "id_bloco": "01",
-                "tipo": "banheiro"
+                "tipo": "banheiro",
+                "palavras_chave": [
+                    "banheiro",
+                    "banheiro bloco B"
+                ]
             }
         },
         {
@@ -1820,7 +2017,18 @@
                 "id_local": "13",
                 "nome": "DURA",
                 "id_bloco": "01",
-                "tipo": "administrativo"
+                "tipo": "administrativo",
+                "palavras_chave": [
+                    "dura",
+                    "DURA",
+                    "diretoria de unidade regionalizada administrativa",
+                    "diretoria administrativa"
+                ],
+                "nome_completo": "Diretoria de Unidade Regionalizada Administrativa",
+                "contato": {
+                    "telefone": "(65) 3361-6477",
+                    "email": "durabarradobugres@unemat.br"
+                }
             }
         },
         {
@@ -1856,7 +2064,12 @@
                 "id_local": 26,
                 "nome": "B4",
                 "id_bloco": "01",
-                "tipo": "sala"
+                "tipo": "sala",
+                "capacidade": 20,
+                "palavras_chave": [
+                    "B4",
+                    "sala"
+                ]
             }
         },
         {
@@ -1892,7 +2105,12 @@
                 "id_local": 39,
                 "nome": "B7",
                 "id_bloco": "01",
-                "tipo": "sala"
+                "tipo": "sala",
+                "capacidade": 30,
+                "palavras_chave": [
+                    "B7",
+                    "sala"
+                ]
             }
         },
         {
@@ -1928,7 +2146,12 @@
                 "id_local": 40,
                 "nome": "B8",
                 "id_bloco": "01",
-                "tipo": "sala"
+                "tipo": "sala",
+                "capacidade": 30,
+                "palavras_chave": [
+                    "B8",
+                    "sala"
+                ]
             }
         },
         {
@@ -1964,7 +2187,18 @@
                 "id_local": "10",
                 "nome": "SPD",
                 "id_bloco": "02",
-                "tipo": "administrativo"
+                "tipo": "administrativo",
+                "nome_completo": "Supervisão de Processamento de Dados",
+                "contato": {
+                    "telefone": "(65) 3361-6499",
+                    "email": "spd.bbg@unemat.br"
+                },
+                "palavras_chave": [
+                    "SPD",
+                    "supervisao de dados",
+                    "supervisao e processamento de dados",
+                    "dados"
+                ]
             }
         },
         {
@@ -2000,7 +2234,12 @@
                 "id_local": "06",
                 "nome": "A2",
                 "id_bloco": "02",
-                "tipo": "sala"
+                "tipo": "sala",
+                "capacidade": 40,
+                "palavras_chave": [
+                    "A2",
+                    "sala"
+                ]
             }
         },
         {
@@ -2036,7 +2275,13 @@
                 "id_local": "09",
                 "nome": "Lab. de Informática I",
                 "id_bloco": "02",
-                "tipo": "laboratorio"
+                "tipo": "laboratorio",
+                "palavras_chave": [
+                    "laboratorio de informatica",
+                    "laboratorio de informatica I",
+                    "laboratorio de informatica 1",
+                    "lab info 1"
+                ]
             }
         },
         {
@@ -2072,7 +2317,13 @@
                 "id_local": "11",
                 "nome": "Lab. de Informática II",
                 "id_bloco": "02",
-                "tipo": "laboratorio"
+                "tipo": "laboratorio",
+                "palavras_chave": [
+                    "laboratorio de informatica",
+                    "laboratorio de informatica II",
+                    "laboratorio de informatica 2",
+                    "lab info 2"
+                ]
             }
         },
         {
@@ -2108,7 +2359,13 @@
                 "id_local": "12",
                 "nome": "Lab. de Informática III",
                 "id_bloco": "02",
-                "tipo": "laboratorio"
+                "tipo": "laboratorio",
+                "palavras_chave": [
+                    "laboratorio de informatica",
+                    "laboratorio de informatica III",
+                    "laboratorio de informatica 3",
+                    "lab info 3"
+                ]
             }
         },
         {
@@ -2144,7 +2401,12 @@
                 "id_local": "05",
                 "nome": "A1",
                 "id_bloco": "02",
-                "tipo": "sala"
+                "tipo": "sala",
+                "capacidade": 40,
+                "palavras_chave": [
+                    "A1",
+                    "sala"
+                ]
             }
         },
         {
@@ -2180,7 +2442,12 @@
                 "id_local": "07",
                 "nome": "Lab. de Redes",
                 "id_bloco": "02",
-                "tipo": "laboratorio"
+                "tipo": "laboratorio",
+                "palavras_chave": [
+                    "laboratorio de redes",
+                    "sala do Diógenes"
+                ],
+                "capacidade": 30
             }
         },
         {
@@ -2216,7 +2483,12 @@
                 "id_local": "08",
                 "nome": "CATIS",
                 "id_bloco": "02",
-                "tipo": "laboratorio"
+                "tipo": "laboratorio",
+                "nome_completo": "Centro de Acesso a Tecnologia para Inclusão Social",
+                "palavras_chave": [
+                    "catis",
+                    "centro de acesso a tecnologia e inclusao social"
+                ]
             }
         },
         {
@@ -2252,7 +2524,10 @@
                 "id_local": "01",
                 "nome": "Banheiros",
                 "id_bloco": "02",
-                "tipo": "banheiro"
+                "tipo": "banheiro",
+                "palavras_chave": [
+                    "banheiros bloco A"
+                ]
             }
         },
         {
@@ -2288,7 +2563,10 @@
                 "id_local": "03",
                 "nome": "Auditório",
                 "id_bloco": "02",
-                "tipo": "auditorio"
+                "tipo": "auditorio",
+                "palavras_chave": [
+                    "Auditório"
+                ]
             }
         },
         {
@@ -2328,7 +2606,12 @@
                 "id_local": "02",
                 "nome": "Hall",
                 "id_bloco": "02",
-                "tipo": "0"
+                "tipo": "0",
+                "palavras_chave": [
+                    "entrada",
+                    "entrada bloco A",
+                    "entrada auditorio"
+                ]
             }
         },
         {
@@ -2364,7 +2647,11 @@
                 "id_local": "04",
                 "nome": "Depósito",
                 "id_bloco": "02",
-                "tipo": "administrativo"
+                "tipo": "administrativo",
+                "palavras_chave": [
+                    "deposito",
+                    "deposito bloco A"
+                ]
             }
         },
         {
@@ -2400,7 +2687,11 @@
                 "id_local": 36,
                 "nome": "Sala de Estágio",
                 "id_bloco": "01",
-                "tipo": "laboratorio"
+                "tipo": "laboratorio",
+                "palavras_chave": [
+                    "sala de estágio",
+                    "estágio arquitetura"
+                ]
             }
         },
         {
@@ -2436,7 +2727,12 @@
                 "id_local": 38,
                 "nome": "B6",
                 "id_bloco": "01",
-                "tipo": "sala"
+                "tipo": "sala",
+                "palavras_chave": [
+                    "B6",
+                    "sala"
+                ],
+                "capacidade": 40
             }
         },
         {
@@ -2472,7 +2768,12 @@
                 "id_local": 37,
                 "nome": "Lab. de Pesquisa",
                 "id_bloco": "01",
-                "tipo": "laboratorio"
+                "tipo": "laboratorio",
+                "palavras_chave": [
+                    "lab pesquisa",
+                    "laboratorio de pesquisa",
+                    "lab de pesquisa"
+                ]
             }
         },
         {
@@ -2508,7 +2809,18 @@
                 "id_local": "14",
                 "nome": "DPPF",
                 "id_bloco": "01",
-                "tipo": "administrativo"
+                "tipo": "administrativo",
+                "palavras_chave": [
+                    "DPPF",
+                    "Diretoria de Unidade Regionalizada Político-Pedagógica e Financeira",
+                    "dppf",
+                    "diretoria politico pedagogica"
+                ],
+                "nome_completo": "Diretoria de Unidade Regionalizada Político-Pedagógica e Financeira",
+                "contato": {
+                    "telefone": "(65) 3361-6478",
+                    "email": "dppf.bbg@unemat.br"
+                }
             }
         },
         {
@@ -2560,7 +2872,12 @@
                 "id_local": 15,
                 "nome": "SRM",
                 "id_bloco": "01",
-                "tipo": "administrativo"
+                "tipo": "administrativo",
+                "palavras_chave": [
+                    "SRM",
+                    "sala"
+                ],
+                "nome_completo": "Sala de Recursos Multifuncionais"
             }
         },
         {
@@ -2596,7 +2913,11 @@
                 "id_local": 42,
                 "nome": "Banheiro Feminino",
                 "id_bloco": "01",
-                "tipo": "banheiro"
+                "tipo": "banheiro",
+                "palavras_chave": [
+                    "banheiro",
+                    "banheiro bloco B"
+                ]
             }
         },
         {
@@ -2632,7 +2953,13 @@
                 "id_local": 22,
                 "nome": "Sala dos Professores",
                 "id_bloco": "01",
-                "tipo": "administrativo"
+                "tipo": "administrativo",
+                "palavras_chave": [
+                    "sala dos professores",
+                    "sala professores",
+                    "sala professor",
+                    "professor"
+                ]
             }
         },
         {
@@ -2668,7 +2995,12 @@
                 "id_local": 21,
                 "nome": "Sala de Ferramentas",
                 "id_bloco": "01",
-                "tipo": "administrativo"
+                "tipo": "administrativo",
+                "palavras_chave": [
+                    "sala de ferramentas",
+                    "sala ferramentas",
+                    "ferramentas"
+                ]
             }
         },
         {
@@ -2704,7 +3036,11 @@
                 "id_local": 72,
                 "nome": "Sala de Reunião",
                 "id_bloco": "01",
-                "tipo": "administrativo"
+                "tipo": "administrativo",
+                "palavras_chave": [
+                    "sala de reuniao",
+                    "reuniao"
+                ]
             }
         },
         {
@@ -2740,39 +3076,12 @@
                 "id_local": 16,
                 "nome": "B5",
                 "id_bloco": "01",
-                "tipo": "sala"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            -57.173242,
-                            -15.064586
-                        ],
-                        [
-                            -57.173242,
-                            -15.064586
-                        ],
-                        [
-                            -57.173242,
-                            -15.064586
-                        ],
-                        [
-                            -57.173242,
-                            -15.064586
-                        ]
-                    ]
+                "tipo": "sala",
+                "capacidade": 40,
+                "palavras_chave": [
+                    "B5",
+                    "sala"
                 ]
-            },
-            "properties": {
-                "id_local": 0,
-                "nome": 0,
-                "id_bloco": "01",
-                "tipo": 0
             }
         },
         {
@@ -2812,7 +3121,16 @@
                 "id_local": 17,
                 "nome": "Núcleo Administrativo",
                 "id_bloco": "01",
-                "tipo": "administrativo"
+                "tipo": "administrativo",
+                "palavras_chave": [
+                    "nucleo",
+                    "administrativo",
+                    "nucleo administrativo"
+                ],
+                "contato": {
+                    "telefone": "(65) 3361-6471",
+                    "email": "sad.bbg@unemat.br"
+                }
             }
         },
         {
@@ -2848,7 +3166,16 @@
                 "id_local": 18,
                 "nome": "Supervisão de Transporte",
                 "id_bloco": "01",
-                "tipo": "administrativo"
+                "tipo": "administrativo",
+                "palavras_chave": [
+                    "supervisao transporte",
+                    "supervisao de transportes",
+                    "transporte"
+                ],
+                "contato": {
+                    "telefone": "(65) 3361-6476",
+                    "email": "transportes.bbg@unemat.br"
+                }
             }
         },
         {
@@ -2904,7 +3231,14 @@
                 "id_local": 28,
                 "nome": "Diretoria",
                 "id_bloco": "01",
-                "tipo": "administrativo"
+                "tipo": "administrativo",
+                "palavras_chave": [
+                    "diretoria"
+                ],
+                "contato": {
+                    "telefone": "(65) 3361-6478",
+                    "email": "dppf.bbg@unemat.br"
+                }
             }
         },
         {
@@ -2940,7 +3274,11 @@
                 "id_local": "30",
                 "nome": "Sala de Espera",
                 "id_bloco": "01",
-                "tipo": "circulacao"
+                "tipo": "circulacao",
+                "palavras_chave": [
+                    "sala de espera",
+                    "espera"
+                ]
             }
         },
         {
@@ -2976,7 +3314,11 @@
                 "id_local": "29",
                 "nome": "Sala de Arquivo",
                 "id_bloco": "01",
-                "tipo": "administrativo"
+                "tipo": "administrativo",
+                "palavras_chave": [
+                    "sala de arquivo",
+                    "arquivo"
+                ]
             }
         },
         {
@@ -3022,42 +3364,6 @@
                 "coordinates": [
                     [
                         [
-                            -57.173076,
-                            -15.064159
-                        ],
-                        [
-                            -57.173157,
-                            -15.064159
-                        ],
-                        [
-                            -57.173157,
-                            -15.0642
-                        ],
-                        [
-                            -57.173076,
-                            -15.0642
-                        ],
-                        [
-                            -57.173076,
-                            -15.064159
-                        ]
-                    ]
-                ]
-            },
-            "properties": {
-                "id_local": 34,
-                "nome": "CAEST",
-                "id_bloco": "01",
-                "tipo": "administrativo"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
                             -57.173242,
                             -15.0642
                         ],
@@ -3084,7 +3390,18 @@
                 "id_local": 32,
                 "nome": "FAINDI",
                 "id_bloco": "01",
-                "tipo": "administrativo"
+                "tipo": "administrativo",
+                "palavras_chave": [
+                    "faindi",
+                    "faind",
+                    "faculdade indigena",
+                    "indigena"
+                ],
+                "nome_completo": "Faculdade Indígena Intercultural",
+                "contato": {
+                    "telefone": "(65) 3361-6463",
+                    "email": "faindi@unemat.br"
+                }
             }
         },
         {
@@ -3120,7 +3437,10 @@
                 "id_local": 33,
                 "nome": "Projetos de Arquitetura",
                 "id_bloco": "01",
-                "tipo": "administrativo"
+                "tipo": "administrativo",
+                "palavras_chave": [
+                    "projetos arquitetura"
+                ]
             }
         },
         {
@@ -3160,7 +3480,13 @@
                 "id_local": 25,
                 "nome": "Recepção",
                 "id_bloco": "01",
-                "tipo": "administrativo"
+                "tipo": "administrativo",
+                "palavras_chave": [
+                    "recepcao",
+                    "entrada",
+                    "entrada principal",
+                    "entrada unemat"
+                ]
             }
         },
         {
@@ -3196,7 +3522,11 @@
                 "id_local": "64",
                 "nome": "Recepção NPJ",
                 "id_bloco": "01",
-                "tipo": "circulacao"
+                "tipo": "circulacao",
+                "palavras_chave": [
+                    "entrada NPJ",
+                    "NPJ"
+                ]
             }
         },
         {
@@ -3232,7 +3562,12 @@
                 "id_local": 66,
                 "nome": "B2",
                 "id_bloco": "01",
-                "tipo": "sala"
+                "tipo": "sala",
+                "capacidade": 40,
+                "palavras_chave": [
+                    "B2",
+                    "sala"
+                ]
             }
         },
         {
@@ -3268,7 +3603,12 @@
                 "id_local": 67,
                 "nome": "B1",
                 "id_bloco": "01",
-                "tipo": "sala"
+                "tipo": "sala",
+                "capacidade": 40,
+                "palavras_chave": [
+                    "B1",
+                    "sala"
+                ]
             }
         },
         {
@@ -3340,7 +3680,11 @@
                 "id_local": 56,
                 "nome": "Bebedouro",
                 "id_bloco": "01",
-                "tipo": "circulacao"
+                "tipo": "circulacao",
+                "palavras_chave": [
+                    "bebedouros",
+                    "bebedouro"
+                ]
             }
         },
         {
@@ -3376,7 +3720,12 @@
                 "id_local": "54",
                 "nome": "Sala de Estágio Computação",
                 "id_bloco": "01",
-                "tipo": "sala"
+                "tipo": "sala",
+                "palavras_chave": [
+                    "sala de estagio",
+                    "sala de estagio computacao",
+                    "estagio computacao"
+                ]
             }
         },
         {
@@ -3412,7 +3761,11 @@
                 "id_local": 52,
                 "nome": "Almoxarifado",
                 "id_bloco": "01",
-                "tipo": "administrativo"
+                "tipo": "administrativo",
+                "palavras_chave": [
+                    "almoxarifado",
+                    "almoxarifado bloco b"
+                ]
             }
         },
         {
@@ -3448,7 +3801,14 @@
                 "id_local": 71,
                 "nome": "Sala de Estudos",
                 "id_bloco": "01",
-                "tipo": "sala"
+                "tipo": "sala",
+                "capacidade": 0,
+                "palavras_chave": [
+                    "sala de estudos",
+                    "estudos",
+                    "sala de estudos biblioteca",
+                    "sala biblioteca"
+                ]
             }
         },
         {
@@ -3484,7 +3844,11 @@
                 "id_local": 70,
                 "nome": "Recepção Biblioteca",
                 "id_bloco": "01",
-                "tipo": "circulacao"
+                "tipo": "circulacao",
+                "palavras_chave": [
+                    "biblioteca",
+                    "entrada biblioteca"
+                ]
             }
         },
         {
@@ -3520,7 +3884,15 @@
                 "id_local": 58,
                 "nome": "Biblioteca",
                 "id_bloco": "01",
-                "tipo": "administrativo"
+                "tipo": "administrativo",
+                "palavras_chave": [
+                    "biblioteca",
+                    "biblioteca unemat"
+                ],
+                "contato": {
+                    "telefone": "(65) 3361-6468",
+                    "email": "bibliotecabbg@unemat.br"
+                }
             }
         },
         {
@@ -3556,7 +3928,19 @@
                 "id_local": "63",
                 "nome": "NPJ",
                 "id_bloco": "01",
-                "tipo": "laboratorio"
+                "tipo": "laboratorio",
+                "palavras_chave": [
+                    "npj",
+                    "NPJ",
+                    "Nucleo de Produçao Juridica",
+                    "producao juridica",
+                    "nucleo juridica"
+                ],
+                "nome_completo": "Núcleo de Produção Jurídica",
+                "contato": {
+                    "telefone": "(65) 3361-6469",
+                    "email": "npj.bbg@unemat.br"
+                }
             }
         },
         {
@@ -3664,7 +4048,10 @@
                 "id_local": 53,
                 "nome": "COPA",
                 "id_bloco": "01",
-                "tipo": "circulacao"
+                "tipo": "circulacao",
+                "palavras_chave": [
+                    "COPA"
+                ]
             }
         },
         {
@@ -3700,7 +4087,12 @@
                 "id_local": 55,
                 "nome": "Sala Pascuale",
                 "id_bloco": "01",
-                "tipo": "sala"
+                "tipo": "sala",
+                "capacidade": 0,
+                "palavras_chave": [
+                    "sala pascuale",
+                    "sala"
+                ]
             }
         },
         {
@@ -3736,7 +4128,10 @@
                 "id_local": 50,
                 "nome": "LATAU",
                 "id_bloco": "01",
-                "tipo": "laboratorio"
+                "tipo": "laboratorio",
+                "palavras_chave": [
+                    "LATAU"
+                ]
             }
         },
         {
@@ -3772,7 +4167,14 @@
                 "id_local": 51,
                 "nome": "Lab. de Microbiologia",
                 "id_bloco": "01",
-                "tipo": "laboratorio"
+                "tipo": "laboratorio",
+                "palavras_chave": [
+                    "laboratorio de microbiologia",
+                    "lab microbiologia",
+                    "microbiologia",
+                    "biologia",
+                    "laboratorio microbiologia"
+                ]
             }
         },
         {
@@ -3880,7 +4282,11 @@
                 "id_local": 43,
                 "nome": "Lab. de Desenho",
                 "id_bloco": "01",
-                "tipo": "laboratorio"
+                "tipo": "laboratorio",
+                "palavras_chave": [
+                    "laboratorio de desenho",
+                    "desenho"
+                ]
             }
         },
         {
@@ -3916,7 +4322,11 @@
                 "id_local": 44,
                 "nome": "Almoxarifado",
                 "id_bloco": "01",
-                "tipo": "administrativo"
+                "tipo": "administrativo",
+                "palavras_chave": [
+                    "almoxarifado",
+                    "almoxarifado bloco B"
+                ]
             }
         },
         {
@@ -3968,7 +4378,13 @@
                 "id_local": 45,
                 "nome": "Lab. de Quimíca",
                 "id_bloco": "01",
-                "tipo": "laboratorio"
+                "tipo": "laboratorio",
+                "palavras_chave": [
+                    "laboratorio de quimica",
+                    "quimica",
+                    "lab quimica",
+                    "laboratorio quimica"
+                ]
             }
         },
         {
@@ -4004,7 +4420,8 @@
                 "id_local": 48,
                 "nome": 0,
                 "id_bloco": "01",
-                "tipo": "desconhecido"
+                "tipo": "desconhecido",
+                "palavras_chave": null
             }
         },
         {
@@ -4040,7 +4457,13 @@
                 "id_local": 47,
                 "nome": "Lab. de Matemática",
                 "id_bloco": "01",
-                "tipo": "laboratorio"
+                "tipo": "laboratorio",
+                "palavras_chave": [
+                    "laboratorio de matematica",
+                    "matematica",
+                    "lab matematica",
+                    "laboratorio matematica"
+                ]
             }
         },
         {
@@ -4076,7 +4499,13 @@
                 "id_local": 46,
                 "nome": "Lab. de Física",
                 "id_bloco": "01",
-                "tipo": "laboratorio"
+                "tipo": "laboratorio",
+                "palavras_chave": [
+                    "laboratorio de fisica",
+                    "fisica",
+                    "lab fisica",
+                    "laboratorio fisica"
+                ]
             }
         },
         {
@@ -4113,7 +4542,11 @@
                 "nome": "C8",
                 "id_bloco": "03",
                 "tipo": "sala",
-                "andar": 1
+                "andar": 1,
+                "palavras_chave": [
+                    "C8",
+                    "sala"
+                ]
             }
         },
         {
@@ -4185,7 +4618,10 @@
                 "id_local": 123,
                 "nome": "Maquetaria",
                 "id_bloco": "04",
-                "tipo": "laboratorio"
+                "tipo": "laboratorio",
+                "palavras_chave": [
+                    "maquetaria"
+                ]
             }
         },
         {
@@ -4365,7 +4801,12 @@
                 "id_local": 116,
                 "nome": "Banheiro PCD",
                 "id_bloco": "04",
-                "tipo": "banheiro"
+                "tipo": "banheiro",
+                "palavras_chave": [
+                    "banheiro",
+                    "banheiro PCD",
+                    "banheiro PCD bloco C"
+                ]
             }
         },
         {
@@ -4405,7 +4846,13 @@
                 "id_local": 115,
                 "nome": "Banheiro Masculino",
                 "id_bloco": "04",
-                "tipo": "banheiro"
+                "tipo": "banheiro",
+                "palavras_chave": [
+                    "banheiro",
+                    "banheiro masculino",
+                    "banheiros bloco C",
+                    "banheiros masculino bloco C"
+                ]
             }
         },
         {
@@ -4461,7 +4908,13 @@
                 "id_local": 114,
                 "nome": "Banheiro Feminino",
                 "id_bloco": "04",
-                "tipo": "banheiro"
+                "tipo": "banheiro",
+                "palavras_chave": [
+                    "banheiro",
+                    "banheiro feminino",
+                    "banheiros bloco C",
+                    "banheiros femininos bloco C"
+                ]
             }
         },
         {
@@ -4533,7 +4986,14 @@
                 "id_local": 113,
                 "nome": "Recepção Campus II",
                 "id_bloco": "04",
-                "tipo": "circulacao"
+                "tipo": "circulacao",
+                "palavras_chave": [
+                    "recepcao",
+                    "recepcao campus II",
+                    "recepcao campus 2",
+                    "campus II",
+                    "campus 2"
+                ]
             }
         },
         {
@@ -4811,23 +5271,23 @@
                 "coordinates": [
                     [
                         [
-                            -57.172852,
+                            -57.172846,
                             -15.063668
                         ],
                         [
-                            -57.172852,
-                            -15.063748
+                            -57.172846,
+                            -15.063738
                         ],
                         [
                             -57.1727,
-                            -15.063748
+                            -15.063738
                         ],
                         [
                             -57.1727,
                             -15.063668
                         ],
                         [
-                            -57.172852,
+                            -57.172846,
                             -15.063668
                         ]
                     ]
@@ -4837,7 +5297,14 @@
                 "id_local": 103,
                 "nome": "LMPPB",
                 "id_bloco": "04",
-                "tipo": "laboratorio"
+                "tipo": "laboratorio",
+                "palavras_chave": [
+                    "lmppb",
+                    "LMPPB",
+                    "biodiesel",
+                    "laboratorio de biodiesel"
+                ],
+                "nome_completo": "Laboratório de Matérias Primas para Produção de Biodiesel"
             }
         },
         {
@@ -4873,7 +5340,11 @@
                 "id_local": 93,
                 "nome": "Entrada CTMAT",
                 "id_bloco": "04",
-                "tipo": "circulacao"
+                "tipo": "circulacao",
+                "palavras_chave": [
+                    "entrada",
+                    "entrada CTMAT"
+                ]
             }
         },
         {
@@ -4909,7 +5380,11 @@
                 "id_local": 94,
                 "nome": "Grupo de Pesquisa",
                 "id_bloco": "04",
-                "tipo": "laboratorio"
+                "tipo": "laboratorio",
+                "palavras_chave": [
+                    "GP3",
+                    "grupo de pesquisa"
+                ]
             }
         },
         {
@@ -4945,7 +5420,12 @@
                 "id_local": 95,
                 "nome": "LANAC",
                 "id_bloco": "04",
-                "tipo": "laboratorio"
+                "tipo": "laboratorio",
+                "palavras_chave": [
+                    "lanac",
+                    "laboratorio de analise cromatografica"
+                ],
+                "nome_completo": "Laboratório de Análise Cromatográfica"
             }
         },
         {
@@ -4981,7 +5461,11 @@
                 "id_local": 96,
                 "nome": "Inoculação",
                 "id_bloco": "04",
-                "tipo": "laboratorio"
+                "tipo": "laboratorio",
+                "palavras_chave": [
+                    "inoculacao",
+                    "sala de inoculacao"
+                ]
             }
         },
         {
@@ -5017,7 +5501,11 @@
                 "id_local": "98",
                 "nome": "Banheiro Masculino",
                 "id_bloco": "04",
-                "tipo": "banheiro"
+                "tipo": "banheiro",
+                "palavras_chave": [
+                    "banheiro masculino",
+                    "banheiro ctmat"
+                ]
             }
         },
         {
@@ -5053,7 +5541,12 @@
                 "id_local": 101,
                 "nome": "MMPO",
                 "id_bloco": "04",
-                "tipo": 0
+                "tipo": "laboratorio",
+                "palavras_chave": [
+                    "mmpo",
+                    "modelagem matematica e pesquisa operacional"
+                ],
+                "nome_completo": "Modelagem Matemática e Pesquisa Operacional"
             }
         },
         {
@@ -5129,7 +5622,11 @@
                 "id_local": 112,
                 "nome": "Administrativo PPGEE",
                 "id_bloco": "04",
-                "tipo": "administrativo"
+                "tipo": "administrativo",
+                "palavras_chave": [
+                    "administrativo",
+                    "administrativo ppgee"
+                ]
             }
         },
         {
@@ -5165,7 +5662,13 @@
                 "id_local": 109,
                 "nome": "Banheiro Feminino",
                 "id_bloco": "04",
-                "tipo": "banheiro"
+                "tipo": "banheiro",
+                "palavras_chave": [
+                    "banheiro",
+                    "banheiro feminino",
+                    "banherio feminino ppgee",
+                    "banheiro ppgee"
+                ]
             }
         },
         {
@@ -5201,7 +5704,11 @@
                 "id_local": 106,
                 "nome": "Lab. de Agroindústria e Alimentos",
                 "id_bloco": "04",
-                "tipo": "laboratorio"
+                "tipo": "laboratorio",
+                "palavras_chave": [
+                    "laboratorio de agroindustria e alimentos",
+                    "laboratorio de agroindustria"
+                ]
             }
         },
         {
@@ -5273,7 +5780,11 @@
                 "id_local": 141,
                 "nome": "Dormitório Mães",
                 "id_campus": "03",
-                "tipo": 0
+                "tipo": 0,
+                "palavras_chave": [
+                    "dormitorio",
+                    "dormitorio maes"
+                ]
             }
         },
         {
@@ -5309,7 +5820,11 @@
                 "id_local": 142,
                 "nome": "Dormitório Mães",
                 "id_campus": "03",
-                "tipo": 0
+                "tipo": 0,
+                "palavras_chave": [
+                    "dormitorio",
+                    "dormitorio maes"
+                ]
             }
         },
         {
@@ -5345,7 +5860,11 @@
                 "id_local": "140",
                 "nome": "Dormitório Feminino",
                 "id_campus": "03",
-                "tipo": "academico"
+                "tipo": "academico",
+                "palavras_chave": [
+                    "dormitorio",
+                    "dormitorio feminino"
+                ]
             }
         },
         {
@@ -5381,7 +5900,11 @@
                 "id_local": 146,
                 "nome": "Dormitório Masculino",
                 "id_campus": "03",
-                "tipo": 0
+                "tipo": "academico",
+                "palavras_chave": [
+                    "dormitorio",
+                    "dormitorio masculino"
+                ]
             }
         },
         {
@@ -5417,7 +5940,11 @@
                 "id_local": 145,
                 "nome": "Dormitório Masculino",
                 "id_campus": "03",
-                "tipo": 0
+                "tipo": "academico",
+                "palavras_chave": [
+                    "dormitorio",
+                    "dormitorio masculino"
+                ]
             }
         },
         {
@@ -5453,7 +5980,11 @@
                 "id_local": 143,
                 "nome": "Dormitório Mães",
                 "id_campus": "03",
-                "tipo": 0
+                "tipo": 0,
+                "palavras_chave": [
+                    "dormitorio",
+                    "dormitorio maes"
+                ]
             }
         },
         {
@@ -5489,7 +6020,11 @@
                 "id_local": 144,
                 "nome": "Dormitório Professores",
                 "id_campus": "03",
-                "tipo": "academico"
+                "tipo": "academico",
+                "palavras_chave": [
+                    "dormitorio",
+                    "dormitorio professores"
+                ]
             }
         },
         {
@@ -5525,7 +6060,10 @@
                 "id_local": 147,
                 "nome": "Agroindustria",
                 "id_campus": "03",
-                "tipo": "laboratorio"
+                "tipo": "laboratorio",
+                "palavras_chave": [
+                    "agroindustria"
+                ]
             }
         },
         {
@@ -5561,7 +6099,10 @@
                 "id_local": 148,
                 "nome": "Agroindustria",
                 "id_campus": "03",
-                "tipo": "laboratorio"
+                "tipo": "laboratorio",
+                "palavras_chave": [
+                    "agroindustria"
+                ]
             }
         },
         {
@@ -5597,7 +6138,10 @@
                 "id_local": 149,
                 "nome": "Agroindustria",
                 "id_campus": "03",
-                "tipo": "laboratorio"
+                "tipo": "laboratorio",
+                "palavras_chave": [
+                    "agroindustria"
+                ]
             }
         },
         {
@@ -5633,7 +6177,10 @@
                 "id_local": 150,
                 "nome": "Agroindustria",
                 "id_campus": "03",
-                "tipo": "laboratorio"
+                "tipo": "laboratorio",
+                "palavras_chave": [
+                    "agroindustria"
+                ]
             }
         },
         {
@@ -5667,7 +6214,7 @@
             },
             "properties": {
                 "id_local": 156,
-                "nome": 0,
+                "nome": "",
                 "id_campus": "03",
                 "tipo": "desconhecido"
             }
@@ -5705,7 +6252,10 @@
                 "id_local": 155,
                 "nome": "Área de Jogos",
                 "id_campus": "03",
-                "tipo": "academico"
+                "tipo": "academico",
+                "palavras_chave": [
+                    "area de jogos"
+                ]
             }
         },
         {
@@ -5741,7 +6291,10 @@
                 "id_local": 157,
                 "nome": "Campo de Futebol",
                 "id_campus": "03",
-                "tipo": "academico"
+                "tipo": "academico",
+                "palavras_chave": [
+                    "campo de futebol"
+                ]
             }
         },
         {
@@ -5793,7 +6346,12 @@
                 "id_local": 151,
                 "nome": "Administração",
                 "id_campus": "03",
-                "tipo": "administrativo"
+                "tipo": "administrativo",
+                "palavras_chave": [
+                    "administracao",
+                    "administracao campus III",
+                    "administracao campus 3"
+                ]
             }
         },
         {
@@ -5829,7 +6387,11 @@
                 "id_local": 152,
                 "nome": "Sala de Aula",
                 "id_campus": "03",
-                "tipo": "sala"
+                "tipo": "sala",
+                "palavras_chave": [
+                    "sala de aula campus III",
+                    "sala de aula campus 3"
+                ]
             }
         },
         {
@@ -5881,7 +6443,11 @@
                 "id_local": 153,
                 "nome": "Sala de Aula",
                 "id_campus": "03",
-                "tipo": "sala"
+                "tipo": "sala",
+                "palavras_chave": [
+                    "sala de aula campus III",
+                    "sala de aula campus 3"
+                ]
             }
         },
         {
@@ -5925,7 +6491,12 @@
                 "id_local": 154,
                 "nome": "Refeitório",
                 "id_campus": "03",
-                "tipo": "academico"
+                "tipo": "academico",
+                "palavras_chave": [
+                    "refeitorio",
+                    "refeitorio campus III",
+                    "refeitorio campus 3"
+                ]
             }
         },
         {
@@ -5943,7 +6514,7 @@
                             -15.06439
                         ],
                         [
-                            -57.172954,
+                            -57.172955,
                             -15.064438
                         ],
                         [
@@ -5969,7 +6540,18 @@
                 "id_local": 158,
                 "nome": "FOCCO",
                 "id_bloco": "01",
-                "tipo": "academico"
+                "tipo": "academico",
+                "palavras_chave": [
+                    "celulas",
+                    "celula",
+                    "foco",
+                    "focco"
+                ],
+                "nome_completo": "Supervisão de Processamento de Dados",
+                "contato": {
+                    "telefone": "(65) 98120-0083",
+                    "email": "focco.bbg@unemat.br"
+                }
             }
         }
     ]
