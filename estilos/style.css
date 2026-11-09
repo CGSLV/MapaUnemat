@@ -273,3 +273,118 @@ header {
      1px  1px 0 white; 
 }
 
+
+/* Ficha compacta de informações do ambiente selecionado. */
+/* O painel flutua dentro da área do mapa sem acompanhar o polígono. */
+.area-mapa {
+    position: relative;
+    flex: 1;
+    min-height: 0;
+    display: flex;
+}
+#painel-local[hidden] { display: none; }
+#painel-local {
+    position: absolute;
+    z-index: 1000;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--fundo);
+    color: var(--texto);
+    max-height: 42%;
+    overflow-y: auto;
+    padding-bottom: env(safe-area-inset-bottom);
+    box-shadow: 0 2px 12px #0003;
+    border-radius: 6px 6px 0 0;
+}
+#fechar-painel-local {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 44px;
+    height: 44px;
+    border: 0;
+    background: transparent;
+    color: var(--texto);
+    font-size: 24px;
+    cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+    #painel-local {
+        top: 70px;
+        right: 16px;
+        left: auto;
+        bottom: auto;
+        width: 360px;
+        max-width: calc(100% - 90px);
+        max-height: calc(100% - 90px);
+        border-radius: 4px;
+    }
+}
+.ficha-ambiente h2 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+    padding: 16px 52px 16px 16px;
+    border-bottom: 1px solid var(--borda);
+    overflow-wrap: anywhere;
+}
+.ficha-ambiente table {
+    border-collapse: collapse;
+    margin: 12px 16px 16px;
+    width: calc(100% - 32px);
+    font-size: 13px;
+}
+.ficha-ambiente tr:nth-child(odd) { background: #ededed; }
+.ficha-ambiente tr:nth-child(even) { background: #f8f8f8; }
+.ficha-ambiente th, .ficha-ambiente td {
+    padding: 9px;
+    text-align: left;
+    vertical-align: top;
+    overflow-wrap: anywhere;
+}
+.ficha-ambiente th {
+    font-weight: 400;
+    width: 40%;
+    border-right: 1px solid white;
+}
+
+.ficha-ambiente td.contato-copiavel {
+    position: relative;
+    padding-right: 38px;
+}
+.copiar-contato {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: 0;
+    border-radius: 4px;
+    background: transparent;
+    color: var(--unemat-azul-profundo);
+    cursor: pointer;
+    font: inherit;
+}
+.copiar-contato:hover { background: #0000000d; }
+.copiar-contato:focus-visible { outline: 2px solid var(--unemat-azul-profundo); }
+.copiar-contato:disabled { cursor: wait; opacity: 0.6; }
+.aviso-copia { display: block; font-size: 12px; margin-top: 4px; }
+.aviso-copia:empty { display: none; }
+
+/* Pesquisa de salas e setores. */
+.pesquisa-locais { position: absolute; top: 12px; left: 12px; z-index: 1001; max-width: calc(100% - 110px); }
+#abrir-pesquisa { display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; background: white; color: var(--unemat-azul-profundo); border: 1px solid var(--borda); border-radius: 4px; box-shadow: 0 1px 5px #0003; cursor: pointer; }
+#painel-pesquisa { margin-top: 8px; width: 340px; max-width: 100%; background: white; padding: 12px; border-radius: 4px; box-shadow: 0 2px 12px #0003; }
+#painel-pesquisa[hidden] { display: none; }
+#form-pesquisa { display: flex; gap: 6px; }
+#termo-pesquisa { width: 100%; min-width: 0; padding: 10px; border: 1px solid var(--borda); border-radius: 4px; font: inherit; }
+#form-pesquisa button { padding: 8px; background: var(--unemat-azul-profundo); color: white; border: 0; border-radius: 4px; cursor: pointer; }
+#status-pesquisa { font-size: 13px; margin-top: 8px; }
+#resultados-pesquisa { list-style: none; max-height: 35dvh; overflow-y: auto; }
+#resultados-pesquisa button { width: 100%; text-align: left; padding: 12px 6px; background: white; color: var(--texto); border: 0; border-bottom: 1px solid var(--borda); font: inherit; font-size: 14px; cursor: pointer; overflow-wrap: anywhere; }
+#resultados-pesquisa button:hover, #resultados-pesquisa button:focus-visible { background: var(--fundo-suave); }

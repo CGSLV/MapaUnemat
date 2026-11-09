@@ -1,4 +1,3 @@
-
 // Inicializando o mapa com Openstreetmap
 const map = L.map('map', {
     maxZoom: 22,
@@ -288,6 +287,123 @@ function carregarGeoJSON(arquivo, cor, tipo) {
                             ? 'nomesBlocos'
                             : 'tooltipPane'
                 });
+
+                // Impressão de informações da sala ao clicar no poligono
+                const propriedades = feature.properties ?? {};
+
+                // Blocos e campus também entram na pesquisa. Eles não têm ficha de informações,
+                // então a pesquisa apenas centraliza e destaca o contorno no mapa.
+                if (tipo === 'blocos' || tipo === 'campus') {
+                    locaisPesquisa.push({ propriedades, layer, categoria: tipo });
+                }
+
+                // Somente estes tipos terão uma ficha ao clicar.
+                // Os nomes precisam ser iguais aos usados no GeoJSON.
+                const tiposComInformacoes = [
+                    'administrativo',
+                    'sala',
+                    'auditorio',
+                    'laboratorio',
+                    'academico'
+                ];
+
+                if (tiposComInformacoes.includes(propriedades.tipo)) {
+                    if (tipo === 'salas') locaisPesquisa.push({ propriedades, layer, categoria: 'salas' });
+                    const ficha = document.createElement('section');
+                    ficha.className = 'ficha-ambiente';
+
+                    // Usa o nome completo; se estiver vazio, mostra o nome curto.
+                    const titulo = document.createElement('h2');
+                    titulo.textContent =
+                        propriedades.nome_completo?.trim() || propriedades.nome;
+                    ficha.appendChild(titulo);
+
+                    const tabela = document.createElement('table');
+                    tabela.setAttribute('aria-label', 'Informações do local');
+                    ficha.appendChild(tabela);
+
+                    // Adiciona somente informações preenchidas.
+                    function adicionarInformacao(rotulo, valor, permitirCopia = false) {
+                        if (valor == null || String(valor).trim() === '') return;
+
+                        const linha = document.createElement('tr');
+                        const campo = document.createElement('th');
+                        campo.scope = 'row';
+                        campo.textContent = rotulo;
+                        const conteudo = document.createElement('td');
+                        conteudo.textContent = String(valor);
+                        if (permitirCopia) {
+                            conteudo.classList.add('contato-copiavel');
+                            const copiar = document.createElement('button');
+                            copiar.type = 'button';
+                            copiar.className = 'copiar-contato';
+                            copiar.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></svg>';
+                            copiar.title = `Copiar ${rotulo.toLowerCase()}`;
+                            copiar.setAttribute('aria-label', `Copiar ${rotulo.toLowerCase()}`);
+                            const aviso = document.createElement('span');
+                            aviso.className = 'aviso-copia';
+                            aviso.setAttribute('role', 'status');
+                            copiar.addEventListener('click', async function () {
+                                const interacao = interacaoCopia;
+                                copiar.disabled = true;
+                                aviso.textContent = '';
+                                try {
+                                    await navigator.clipboard.writeText(String(valor));
+                                    if (interacao === interacaoCopia) aviso.textContent = 'Copiado!';
+                                } catch (erro) {
+                                    if (interacao === interacaoCopia) {
+                                        aviso.textContent = 'Não foi possível copiar. Selecione o texto e copie manualmente.';
+                                    }
+                                } finally {
+                                    copiar.disabled = false;
+                                }
+                            });
+                            conteudo.append(copiar, aviso);
+                        }
+                        linha.append(campo, conteudo);
+                        tabela.appendChild(linha);
+                    }
+
+                    const tiposExibidos = {
+                        sala: 'Sala de aula', administrativo: 'Administrativo',
+                        auditorio: 'Auditório', laboratorio: 'Laboratório', academico: 'Acadêmico'
+                    };
+                    adicionarInformacao('Tipo', tiposExibidos[propriedades.tipo]);
+                    if (propriedades.andar != null && String(propriedades.andar).trim() !== '') {
+                        adicionarInformacao('Andar', Number(propriedades.andar) + 1);
+                    }
+
+                    if (propriedades.tipo === 'sala') {
+                        adicionarInformacao('Capacidade', propriedades.capacidade);
+                    }
+
+                    if (propriedades.tipo === 'administrativo') {
+                        adicionarInformacao(
+                            'Telefone',
+                            propriedades.contato?.telefone,
+                            true
+                        );
+                        adicionarInformacao(
+                            'E-mail',
+                            propriedades.contato?.email,
+                            true
+                        );
+                    }
+
+                    const estiloOriginal = { color: layer.options.color, weight: layer.options.weight };
+                    layer.on('click', function () {
+                        fecharPainelLocal();
+                        document.getElementById('conteudo-painel-local').replaceChildren(ficha);
+                        document.getElementById('painel-local').hidden = false;
+                        localSelecionado = { layer, estiloOriginal };
+                        layer.setStyle({ color: '#00a6b5', weight: 3 });
+                        // Impede que as bordas vizinhas encubram o contorno selecionado.
+                        layer.bringToFront();
+                    });
+                    layer.on('remove', function () {
+                        if (localSelecionado?.layer === layer) fecharPainelLocal();
+                    });
+                }
                 }   
             };
 
@@ -387,6 +503,160 @@ map.on('zoomend', atualizarNomesBlocos);
 
 atualizarNomesSalas();
 
+
+// Um único painel fixo compartilha os dados dos ambientes selecionados.
+// Limpa a confirmação antes de processar qualquer novo clique, inclusive no mapa.
+let interacaoCopia = 0;
+document.addEventListener('click', function () {
+    interacaoCopia += 1;
+    document.querySelectorAll('.aviso-copia').forEach(function (aviso) {
+        aviso.textContent = '';
+    });
+}, true);
+let localSelecionado = null;
+function fecharPainelLocal() {
+    // Remove também o destaque temporário de blocos e campus vindo da pesquisa.
+    if (typeof limparDestaquePesquisa === 'function') limparDestaquePesquisa();
+    if (localSelecionado) {
+        localSelecionado.layer.setStyle(localSelecionado.estiloOriginal);
+        localSelecionado = null;
+    }
+    document.getElementById('painel-local').hidden = true;
+}
+document.getElementById('fechar-painel-local').addEventListener('click', fecharPainelLocal);
+document.addEventListener('keydown', function (evento) {
+    if (evento.key === 'Escape') fecharPainelLocal();
+});
+
+// A pesquisa usa as mesmas camadas e fichas do clique no mapa.
+const locaisPesquisa = [];
+const botaoPesquisa = document.getElementById('abrir-pesquisa');
+const painelPesquisa = document.getElementById('painel-pesquisa');
+const termoPesquisa = document.getElementById('termo-pesquisa');
+const resultadosPesquisa = document.getElementById('resultados-pesquisa');
+const statusPesquisa = document.getElementById('status-pesquisa');
+function normalizarPesquisa(valor) {
+    return String(valor ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
+}
+function localCorrespondePesquisa(p, termo, categoria) {
+    const palavras = Array.isArray(p.palavras_chave) ? p.palavras_chave.join(' ') : p.palavras_chave;
+    const nomesTipos = {
+        sala: 'sala de aula salas',
+        auditorio: 'auditório auditorio auditorios',
+        laboratorio: 'laboratório laboratorio laboratorios',
+        administrativo: 'administrativo setor administrativo',
+        academico: 'acadêmico academico'
+    };
+    // Permite encontrar blocos e campus digitando "bloco", "blocos" ou "campus".
+    const nomesCategorias = {
+        blocos: 'bloco blocos',
+        campus: 'campus'
+    };
+    const texto = normalizarPesquisa([
+        p.nome, p.nome_completo, p.tipo, nomesTipos[p.tipo], nomesCategorias[categoria], palavras
+    ].join(' '));
+    return normalizarPesquisa(termo).split(/\s+/).filter(Boolean).every(parte => texto.includes(parte));
+}
+botaoPesquisa.addEventListener('click', function () {
+    painelPesquisa.hidden = !painelPesquisa.hidden;
+    botaoPesquisa.setAttribute('aria-expanded', String(!painelPesquisa.hidden));
+    if (!painelPesquisa.hidden) termoPesquisa.focus();
+});
+// Destaque temporário do contorno de blocos e campus, que não possuem ficha de informações.
+let destaquePesquisa = null;
+function limparDestaquePesquisa() {
+    if (!destaquePesquisa) return;
+    clearTimeout(destaquePesquisa.temporizador);
+    destaquePesquisa.layer.setStyle(destaquePesquisa.estiloOriginal);
+    destaquePesquisa = null;
+}
+function destacarContorno(layer) {
+    limparDestaquePesquisa();
+    const estiloOriginal = { color: layer.options.color, weight: layer.options.weight };
+    // Não usa bringToFront: campus e blocos ficariam por cima das salas e bloqueariam seus cliques.
+    layer.setStyle({ color: '#00a6b5', weight: 4 });
+    destaquePesquisa = {
+        layer,
+        estiloOriginal,
+        temporizador: setTimeout(limparDestaquePesquisa, 3000)
+    };
+}
+
+// Rótulo exibido ao lado de cada resultado e ordem de exibição (campus, blocos e depois salas).
+const rotulosCategoria = { campus: 'Campus', blocos: 'Bloco' };
+const ordemCategoria = { campus: 0, blocos: 1, salas: 2 };
+
+function pesquisarLocais() {
+    resultadosPesquisa.replaceChildren();
+    const termo = normalizarPesquisa(termoPesquisa.value);
+    statusPesquisa.textContent = '';
+    if (!termo) return;
+    const encontrados = locaisPesquisa
+        .filter(({ propriedades: p, categoria }) => localCorrespondePesquisa(p, termo, categoria))
+        // Os arquivos carregam em tempos diferentes; a ordenação mantém a lista previsível.
+        .sort((a, b) => (ordemCategoria[a.categoria] ?? 9) - (ordemCategoria[b.categoria] ?? 9));
+    statusPesquisa.textContent = encontrados.length
+        ? `${encontrados.length} resultado(s)` : 'Nenhum local encontrado.';
+    encontrados.forEach(function ({ propriedades: p, layer, categoria }) {
+        const item = document.createElement('li');
+        const botao = document.createElement('button');
+        botao.type = 'button';
+        botao.textContent = p.nome_completo?.trim() ? `${p.nome} — ${p.nome_completo}` : p.nome;
+        // Identifica visualmente se o resultado é um campus ou um bloco.
+        if (rotulosCategoria[categoria]) {
+            const etiqueta = document.createElement('small');
+            etiqueta.textContent = ` (${rotulosCategoria[categoria]})`;
+            etiqueta.style.opacity = '0.7';
+            botao.appendChild(etiqueta);
+        }
+        botao.addEventListener('click', function () {
+            const ehAmbiente = categoria === 'salas';
+            const idBloco = String(p.id_bloco ?? '').padStart(2, '0');
+            if (ehAmbiente && idBloco === '03' && [0, 1].includes(Number(p.andar))) {
+                botoesAndares.find(b => Number(b.dataset.andar) === Number(p.andar))?.click();
+            }
+            if (ehAmbiente) {
+                layer.fire('click');
+            } else {
+                // Blocos e campus: fecha a ficha aberta e destaca o contorno.
+                fecharPainelLocal();
+                destacarContorno(layer);
+            }
+            painelPesquisa.hidden = true;
+            botaoPesquisa.setAttribute('aria-expanded', 'false');
+            termoPesquisa.blur();
+            // Reserva espaço para a ficha para manter o resultado visível.
+            const tamanho = map.getSize();
+            const painel = document.getElementById('painel-local');
+            const mobile = window.matchMedia('(max-width: 767px)').matches;
+            map.fitBounds(layer.getBounds(), {
+                // Campus é grande; blocos e salas aceitam mais aproximação.
+                maxZoom: categoria === 'campus' ? 19 : ehAmbiente ? 21 : 20,
+                paddingTopLeft: [20, 65],
+                paddingBottomRight: !ehAmbiente
+                    ? [20, 20]
+                    : mobile
+                        ? [20, Math.min(painel.offsetHeight + 20, tamanho.y * 0.48)]
+                        : [Math.min(painel.offsetWidth + 32, tamanho.x * 0.48), 20]
+            });
+            botaoPesquisa.focus({ preventScroll: true });
+        });
+        item.appendChild(botao);
+        resultadosPesquisa.appendChild(item);
+    });
+}
+termoPesquisa.addEventListener('input', pesquisarLocais);
+document.getElementById('form-pesquisa').addEventListener('submit', function (evento) {
+    evento.preventDefault();
+    pesquisarLocais();
+});
+painelPesquisa.addEventListener('keydown', function (evento) {
+    if (evento.key === 'Escape') {
+        painelPesquisa.hidden = true;
+        botaoPesquisa.setAttribute('aria-expanded', 'false');
+        botaoPesquisa.focus();
+    }
+});
 
 // Carregando os GeoJson no mapa por camadas
 carregarGeoJSON("dados/campus.geojson", "#9be5aeab", "campus");

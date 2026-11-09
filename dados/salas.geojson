@@ -6540,14 +6540,14 @@
                 "id_local": 158,
                 "nome": "FOCCO",
                 "id_bloco": "01",
-                "tipo": "academico",
+                "tipo": "administrativo",
                 "palavras_chave": [
                     "celulas",
                     "celula",
                     "foco",
                     "focco"
                 ],
-                "nome_completo": "Supervisão de Processamento de Dados",
+                "nome_completo": "Programa de Formação de Células Cooperativas e Solidárias",
                 "contato": {
                     "telefone": "(65) 98120-0083",
                     "email": "focco.bbg@unemat.br"

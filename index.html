@@ -30,7 +30,26 @@
     
     <div class="barra-degrade" aria-hidden="true"></div>
 
-    <div id="map"></div>
+    <main class="area-mapa">
+        <div id="map"></div>
+        <div class="pesquisa-locais">
+            <button id="abrir-pesquisa" type="button" aria-label="Pesquisar salas" aria-expanded="false" aria-controls="painel-pesquisa">
+                <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="m15 15 6 6"/></svg>
+            </button>
+            <div id="painel-pesquisa" hidden>
+                <form id="form-pesquisa" role="search">
+                    <input id="termo-pesquisa" type="search" placeholder="Pesquisar sala ou setor…" aria-label="Nome da sala ou setor" autocomplete="off">
+                    <button type="submit">Buscar</button>
+                </form>
+                <p id="status-pesquisa" role="status"></p>
+                <ul id="resultados-pesquisa" aria-label="Resultados da pesquisa"></ul>
+            </div>
+        </div>
+        <aside id="painel-local" aria-label="Informações do local" hidden>
+            <button id="fechar-painel-local" type="button" aria-label="Fechar informações">×</button>
+            <div id="conteudo-painel-local"></div>
+        </aside>
+    </main>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
