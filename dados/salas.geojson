@@ -37,11 +37,10 @@
                 "tipo": "administrativo",
                 "palavras_chave": [
                     "caest",
-                    "centro de assuntos estudantis",
-                    "centro estudantis",
-                    "centro"
+                    "central de Atendimento ao Estudante",
+                    "central"
                 ],
-                "nome_completo": "Centro de Assuntos Estudantis",
+                "nome_completo": "Central de Atendimento ao Estudante",
                 "contato": {
                     "telefone": "(65) 3361-6498",
                     "email": "caest.bbg@unemat.br"
@@ -1460,14 +1459,12 @@
             },
             "properties": {
                 "id_local": "49",
-                "nome": "Lab. de Robótica",
+                "nome": "B11",
                 "id_bloco": "01",
-                "tipo": "laboratorio",
+                "tipo": "sala",
                 "palavras_chave": [
-                    "laboratorio de robotica",
-                    "robotica",
-                    "lab robotica",
-                    "laboratorio robotica"
+                    "sala",
+                    "B11"
                 ]
             }
         },
@@ -1542,9 +1539,10 @@
             },
             "properties": {
                 "id_local": "68",
-                "nome": 0,
+                "nome": "NPJ II",
                 "id_bloco": "01",
-                "tipo": "desconhecido"
+                "tipo": "academico",
+                "nome_completo": "Sala de Atendimento II - NPJ II"
             }
         },
         {
@@ -1578,9 +1576,13 @@
             },
             "properties": {
                 "id_local": 69,
-                "nome": 0,
+                "nome": "Almoxarifado",
                 "id_bloco": "01",
-                "tipo": "desconhecido"
+                "tipo": "administrativo",
+                "palavras_chave": [
+                    "almoxarifado",
+                    "almoxarifado bloco B"
+                ]
             }
         },
         {
@@ -1614,12 +1616,11 @@
             },
             "properties": {
                 "id_local": 65,
-                "nome": "Psicóloga",
+                "nome": "Massoterapia",
                 "id_bloco": "01",
-                "tipo": "administrativo",
+                "tipo": "academico",
                 "palavras_chave": [
-                    "psicologa",
-                    "sala psicologa"
+                    "massoterapia"
                 ]
             }
         },
@@ -1694,9 +1695,13 @@
             },
             "properties": {
                 "id_local": 73,
-                "nome": "Sala",
+                "nome": "B5",
                 "id_bloco": "01",
-                "tipo": "desconhecido"
+                "tipo": "sala",
+                "palavras_chave": [
+                    "B5",
+                    "sala"
+                ]
             }
         },
         {
@@ -1734,11 +1739,11 @@
             },
             "properties": {
                 "id_local": 31,
-                "nome": "B3",
+                "nome": "B4",
                 "id_bloco": "01",
                 "tipo": "sala",
                 "palavras_chave": [
-                    "B3",
+                    "B4",
                     "sala"
                 ],
                 "capacidade": 20
@@ -1775,12 +1780,14 @@
             },
             "properties": {
                 "id_local": 27,
-                "nome": "Diretoria",
+                "nome": "Núcleo Pedagógico",
                 "id_bloco": "01",
                 "tipo": "administrativo",
                 "palavras_chave": [
-                    "diretoria"
-                ]
+                    "nucleo pedagogico",
+                    "nucleo"
+                ],
+                "nome_completo": "Núcleo Pedagógico Faculdades e Coordenações"
             }
         },
         {
@@ -1814,13 +1821,13 @@
             },
             "properties": {
                 "id_local": 20,
-                "nome": "Sala de Reunião",
+                "nome": "SAD",
                 "id_bloco": "01",
                 "tipo": "administrativo",
                 "palavras_chave": [
-                    "sala de reuniao",
-                    "reuniao"
-                ]
+                    "sad"
+                ],
+                "": ""
             }
         },
         {
@@ -1854,12 +1861,14 @@
             },
             "properties": {
                 "id_local": 19,
-                "nome": "Projetos de Arquitetura",
+                "nome": "SEOC",
                 "id_bloco": "01",
-                "tipo": "laboratorio",
+                "tipo": "administrativo",
                 "palavras_chave": [
-                    "projetos de arquitetura"
-                ]
+                    "seoc",
+                    "secretaria dos orgaos colegiados"
+                ],
+                "nome_completo": "Secretaria dos Órgãos Colegiados"
             }
         },
         {
@@ -2062,12 +2071,12 @@
             },
             "properties": {
                 "id_local": 26,
-                "nome": "B4",
+                "nome": "B6",
                 "id_bloco": "01",
                 "tipo": "sala",
                 "capacidade": 20,
                 "palavras_chave": [
-                    "B4",
+                    "B6",
                     "sala"
                 ]
             }
@@ -2103,12 +2112,12 @@
             },
             "properties": {
                 "id_local": 39,
-                "nome": "B7",
+                "nome": "B10",
                 "id_bloco": "01",
                 "tipo": "sala",
                 "capacidade": 30,
                 "palavras_chave": [
-                    "B7",
+                    "B10",
                     "sala"
                 ]
             }
@@ -2144,12 +2153,12 @@
             },
             "properties": {
                 "id_local": 40,
-                "nome": "B8",
+                "nome": "B9",
                 "id_bloco": "01",
                 "tipo": "sala",
                 "capacidade": 30,
                 "palavras_chave": [
-                    "B8",
+                    "B9",
                     "sala"
                 ]
             }
@@ -2691,7 +2700,8 @@
                 "palavras_chave": [
                     "sala de estágio",
                     "estágio arquitetura"
-                ]
+                ],
+                "nome_completo": "Sala de Estágio Arquitetura e Urbanismo"
             }
         },
         {
@@ -2725,11 +2735,11 @@
             },
             "properties": {
                 "id_local": 38,
-                "nome": "B6",
+                "nome": "B8",
                 "id_bloco": "01",
                 "tipo": "sala",
                 "palavras_chave": [
-                    "B6",
+                    "B8",
                     "sala"
                 ],
                 "capacidade": 40
@@ -2766,14 +2776,16 @@
             },
             "properties": {
                 "id_local": 37,
-                "nome": "Lab. de Pesquisa",
+                "nome": "LACAS e LATEC",
                 "id_bloco": "01",
                 "tipo": "laboratorio",
                 "palavras_chave": [
-                    "lab pesquisa",
-                    "laboratorio de pesquisa",
-                    "lab de pesquisa"
-                ]
+                    "LACAS",
+                    "LATEC",
+                    "Laboratório de Conforto Ambiental e Sustentabilidade Urbana",
+                    "Laboratório de Tecnologia da Construção"
+                ],
+                "nome_completo": "Laboratório de Conforto Ambiental e Sustentabilidade Urbana / Laboratório de Tecnologia da Construção"
             }
         },
         {
@@ -2870,14 +2882,20 @@
             },
             "properties": {
                 "id_local": 15,
-                "nome": "SRM",
+                "nome": "Diretorias e RH",
                 "id_bloco": "01",
                 "tipo": "administrativo",
                 "palavras_chave": [
-                    "SRM",
-                    "sala"
+                    "diretoria",
+                    "diratorias",
+                    "rh",
+                    "dura",
+                    "dppf",
+                    "srh",
+                    "diretorias e supervisao de recursos humanos",
+                    "recursos humanos"
                 ],
-                "nome_completo": "Sala de Recursos Multifuncionais"
+                "nome_completo": "Diretorias e Supervisão de Recursos Humanos DURA|DPPF|SRH"
             }
         },
         {
@@ -2993,14 +3011,14 @@
             },
             "properties": {
                 "id_local": 21,
-                "nome": "Sala de Ferramentas",
+                "nome": "Ferramentas",
                 "id_bloco": "01",
                 "tipo": "administrativo",
                 "palavras_chave": [
-                    "sala de ferramentas",
-                    "sala ferramentas",
-                    "ferramentas"
-                ]
+                    "ferramentas",
+                    "sala de ferramentas"
+                ],
+                "nome_completo": "Almoxarifado de Ferramentas"
             }
         },
         {
@@ -3074,12 +3092,12 @@
             },
             "properties": {
                 "id_local": 16,
-                "nome": "B5",
+                "nome": "B7",
                 "id_bloco": "01",
                 "tipo": "sala",
                 "capacidade": 40,
                 "palavras_chave": [
-                    "B5",
+                    "B7",
                     "sala"
                 ]
             }
@@ -3229,16 +3247,20 @@
             },
             "properties": {
                 "id_local": 28,
-                "nome": "Diretoria",
+                "nome": "SAA",
                 "id_bloco": "01",
                 "tipo": "administrativo",
                 "palavras_chave": [
-                    "diretoria"
+                    "saa",
+                    "apoio academico",
+                    "supervisao de apoio academico",
+                    "supervisao"
                 ],
                 "contato": {
                     "telefone": "(65) 3361-6478",
                     "email": "dppf.bbg@unemat.br"
-                }
+                },
+                "nome_completo": "Supervisão de Apoio Acadêmico"
             }
         },
         {
@@ -3352,9 +3374,13 @@
             },
             "properties": {
                 "id_local": 35,
-                "nome": "Sala",
+                "nome": "B3",
                 "id_bloco": "01",
-                "tipo": "desconhecido"
+                "tipo": "sala",
+                "palavras_chave": [
+                    "B3",
+                    "sala"
+                ]
             }
         },
         {
@@ -3435,7 +3461,7 @@
             },
             "properties": {
                 "id_local": 33,
-                "nome": "Projetos de Arquitetura",
+                "nome": "Sala das Engenharias",
                 "id_bloco": "01",
                 "tipo": "administrativo",
                 "palavras_chave": [
@@ -3642,9 +3668,13 @@
             },
             "properties": {
                 "id_local": 57,
-                "nome": "",
+                "nome": "Almoxarifado",
                 "id_bloco": "01",
-                "tipo": "desconhecido"
+                "tipo": "administrativo",
+                "palavras_chave": [
+                    "almoxarifado",
+                    "almoxarifado bloco B"
+                ]
             }
         },
         {
@@ -3759,12 +3789,14 @@
             },
             "properties": {
                 "id_local": 52,
-                "nome": "Almoxarifado",
+                "nome": "Almoxarifado Terceirizados",
                 "id_bloco": "01",
                 "tipo": "administrativo",
                 "palavras_chave": [
                     "almoxarifado",
-                    "almoxarifado bloco b"
+                    "almoxarifado bloco b",
+                    "terceirizado",
+                    "terceirizados"
                 ]
             }
         },
@@ -4126,12 +4158,14 @@
             },
             "properties": {
                 "id_local": 50,
-                "nome": "LATAU",
+                "nome": "LAPUC",
                 "id_bloco": "01",
                 "tipo": "laboratorio",
                 "palavras_chave": [
-                    "LATAU"
-                ]
+                    "LAPUC",
+                    "Laboratório de Ensino e Planejamento Urbanístico e da Cidade"
+                ],
+                "nome_completo": "Laboratório de Ensino e Planejamento Urbanístico e da Cidade"
             }
         },
         {
@@ -4185,6 +4219,10 @@
                     [
                         [
                             -57.172898,
+                            -15.064257
+                        ],
+                        [
+                            -57.17292,
                             -15.064257
                         ],
                         [
@@ -4280,13 +4318,16 @@
             },
             "properties": {
                 "id_local": 43,
-                "nome": "Lab. de Desenho",
+                "nome": "Lab. HPC",
                 "id_bloco": "01",
                 "tipo": "laboratorio",
                 "palavras_chave": [
-                    "laboratorio de desenho",
-                    "desenho"
-                ]
+                    "laboratorio de computacao de alto desempenho",
+                    "lab hpc",
+                    "hpc",
+                    "computacao de alto desempenho"
+                ],
+                "nome_completo": "Computação de Alto Desempenho/High Performance Computing"
             }
         },
         {
