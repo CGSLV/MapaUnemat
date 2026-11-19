@@ -1,0 +1,545 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -57.172805,
+                    -15.065806
+                ]
+            },
+            "properties": {
+                "nome": "Residencial 2k bloco II",
+                "tipo": "interesse_academico",
+                "categoria": "moradia"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -57.17234,
+                    -15.065744
+                ]
+            },
+            "properties": {
+                "nome": "Residencial Navarro",
+                "tipo": "interesse_academico",
+                "categoria": "moradia"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -57.177653,
+                    -15.065478
+                ]
+            },
+            "properties": {
+                "nome": "Caju Lanches e Pizzas",
+                "tipo": "interesse_academico",
+                "categoria": "alimentacao"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -57.175302,
+                    -15.063678
+                ]
+            },
+            "properties": {
+                "nome": "Empório São Rafael",
+                "tipo": "interesse_academico",
+                "categoria": "alimentacao"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -57.1766,
+                    -15.065959
+                ]
+            },
+            "properties": {
+                "nome": "UBS Sergio Perreira de Arruda",
+                "tipo": "interesse_academico",
+                "categoria": "saude"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -57.174598,
+                    -15.06373
+                ]
+            },
+            "properties": {
+                "nome": "Mercado SL",
+                "tipo": "interesse_academico",
+                "categoria": "alimentacao"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -57.174314,
+                    -15.064005
+                ]
+            },
+            "properties": {
+                "nome": "Espetinho do Brito",
+                "tipo": "interesse_academico",
+                "categoria": "alimentacao"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -57.173479,
+                    -15.063604
+                ]
+            },
+            "properties": {
+                "nome": "Saboroso Lanches",
+                "tipo": "interesse_academico",
+                "categoria": "alimentacao"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -57.173458,
+                    -15.064735
+                ]
+            },
+            "properties": {
+                "nome": "Restaurante da Anita",
+                "tipo": "interesse_academico",
+                "categoria": "alimentacao"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -57.179544,
+                    -15.064956
+                ]
+            },
+            "properties": {
+                "nome": "Mr Capy Burguer",
+                "tipo": "interesse_academico",
+                "categoria": "alimentacao"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -57.179254,
+                    -15.064939
+                ]
+            },
+            "properties": {
+                "nome": "Macarrao e Cia",
+                "tipo": "interesse_academico",
+                "categoria": "alimentacao"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -57.180045,
+                    -15.065113
+                ]
+            },
+            "properties": {
+                "nome": "Top Burguer",
+                "tipo": "interesse_academico",
+                "categoria": "alimentacao"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -57.179128,
+                    -15.065586
+                ]
+            },
+            "properties": {
+                "nome": "Padaria Pão Praça e CIA",
+                "tipo": "interesse_academico",
+                "categoria": "alimetacao"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -57.178696,
+                    -15.065727
+                ]
+            },
+            "properties": {
+                "nome": "Farmácia Droga Mais Economia",
+                "tipo": "interesse_academico",
+                "categoria": "saude"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -57.178636,
+                    -15.06609
+                ]
+            },
+            "properties": {
+                "nome": "Supermercado REAL",
+                "tipo": "interesse_academico",
+                "categoria": "alimentacao"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -57.179828,
+                    -15.067137
+                ]
+            },
+            "properties": {
+                "nome": "Drograria Ultra Popular Centro",
+                "tipo": "interesse_academico",
+                "categoria": "saude"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -57.179043,
+                    -15.067611
+                ]
+            },
+            "properties": {
+                "nome": "Farmácia Economize",
+                "tipo": "interesse_academico",
+                "categoria": "saude"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -57.179937,
+                    -15.068761
+                ]
+            },
+            "properties": {
+                "nome": "Hospital Roosevelth Figueiredo Lira",
+                "tipo": "interesse_academico",
+                "categoria": "saude"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -57.195041,
+                    -15.075136
+                ]
+            },
+            "properties": {
+                "nome": "UPA 24H - Jaime Veríssimo de Campos Junior",
+                "tipo": "interesse_academico",
+                "categoria": "saude"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nome": "Residencial Mandala",
+                "tipo": "interesse_academico",
+                "categoria": "moradia"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -57.174285,
+                    -15.063171
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nome": "Residencial Lopes",
+                "tipo": "interesse_academico",
+                "categoria": "moradia"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -57.173547,
+                    -15.065774
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nome": "Residencial Tabajara",
+                "tipo": "interesse_academico",
+                "categoria": "moradia"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -57.172204,
+                    -15.066552
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nome": "Residencial Bela Vista",
+                "tipo": "interesse_academico",
+                "categoria": "moradia"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -57.17079,
+                    -15.066872
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nome": "Condominio ",
+                "tipo": "interesse_academico",
+                "categoria": "moradia"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -57.171426,
+                    -15.067012
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nome": "Residencial Maranata",
+                "tipo": "interesse_academico",
+                "categoria": "moradia"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -57.174057,
+                    -15.065242
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nome": "Residencial Keyze",
+                "tipo": "interesse_academico",
+                "categoria": "moradia"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -57.172492,
+                    -15.061976
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nome": "Residencial Cosquista II",
+                "tipo": "interesse_academico",
+                "categoria": "moradia"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -57.175351,
+                    -15.064203
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nome": "Residencial Mattos II",
+                "tipo": "interesse_academico",
+                "categoria": "moradia"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -57.175551,
+                    -15.065099
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nome": "Residencial Oliveira",
+                "tipo": "interesse_academico",
+                "categoria": "moradia"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -57.176151,
+                    -15.066525
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nome": "Residencial Goiás",
+                "tipo": "interesse_academico",
+                "categoria": "moradia"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -57.177027,
+                    -15.066321
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nome": "Residencial Conquista",
+                "tipo": "interesse_academico",
+                "categoria": "moradia"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -57.172732,
+                    -15.065654
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nome": "Residencial Elite",
+                "tipo": "interesse_academico",
+                "categoria": "moradia"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -57.171281,
+                    -15.066476
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nome": "Residencial Geovana",
+                "tipo": "interesse_academico",
+                "categoria": "moradia"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -57.174858,
+                    -15.067214
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nome": "Residencial Prof. Alice",
+                "tipo": "interesse academico",
+                "categoria": "moradia"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -57.176155,
+                    -15.062898
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nome": "Residencial Barra Ville",
+                "tipo": "interesse_academico",
+                "categoria": "moradia"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -57.178454,
+                    -15.067169
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nome": "Residencial Destro",
+                "tipo": "interesse_academico",
+                "categoria": "moradia"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -57.176514,
+                    -15.064015
+                ]
+            }
+        }
+    ]
+}

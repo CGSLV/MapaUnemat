@@ -239,6 +239,29 @@ function carregarGeoJSON(arquivo, cor, tipo) {
             return resposta.json();
         })
         .then(dados => {
+            if (tipo === 'outros-locais') {
+                const iconesPorCategoria = {
+                    moradia: L.icon({ iconUrl: 'dados/house.png', iconSize: [32, 32], iconAnchor: [16, 30], popupAnchor: [0, -28] }),
+                    alimentacao: L.icon({ iconUrl: 'dados/restaurant.png', iconSize: [32, 32], iconAnchor: [16, 30], popupAnchor: [0, -28] }),
+                    alimetacao: L.icon({ iconUrl: 'dados/restaurant.png', iconSize: [32, 32], iconAnchor: [16, 30], popupAnchor: [0, -28] }),
+                    saude: L.icon({ iconUrl: 'dados/hospital.png', iconSize: [32, 32], iconAnchor: [16, 30], popupAnchor: [0, -28] })
+                };
+                const camadaPins = L.geoJSON(dados, {
+                    pointToLayer: (feature, latlng) => {
+                        const categoria = String(feature.properties?.categoria ?? '').toLowerCase();
+                        const icone = iconesPorCategoria[categoria] ?? iconesPorCategoria.alimentacao;
+                        return L.marker(latlng, { icon: icone, title: feature.properties?.nome ?? 'Local de interesse' });
+                    },
+                    onEachFeature: (feature, marker) => {
+                        const p = feature.properties ?? {};
+                        const nome = document.createElement('strong');
+                        nome.textContent = p.nome ?? 'Local de interesse';
+                        marker.bindPopup(nome);
+                        locaisPesquisa.push({ propriedades: p, layer: marker, categoria: 'outros-locais' });
+                    }
+                }).addTo(map);
+                return camadaPins;
+            }
             // Propriedades dos poligonos desenhados
             const opcoes = {
                 // Evita recortar a geometria no limite da área visível.
@@ -550,7 +573,8 @@ function localCorrespondePesquisa(p, termo, categoria) {
     // Permite encontrar blocos e campus digitando "bloco", "blocos" ou "campus".
     const nomesCategorias = {
         blocos: 'bloco blocos',
-        campus: 'campus'
+        campus: 'campus',
+        'outros-locais': ({ moradia: 'moradia dormitorio dormitórios residência residencial', alimentacao: 'alimentação alimentacao comida restaurante mercado cantina', alimetacao: 'alimentação alimentacao comida restaurante mercado cantina', saude: 'saúde saude hospital enfermaria' })[p.categoria] ?? 'local de interesse'
     };
     const texto = normalizarPesquisa([
         p.nome, p.nome_completo, p.tipo, nomesTipos[p.tipo], nomesCategorias[categoria], palavras
@@ -568,23 +592,28 @@ function limparDestaquePesquisa() {
     if (!destaquePesquisa) return;
     clearTimeout(destaquePesquisa.temporizador);
     destaquePesquisa.layer.setStyle(destaquePesquisa.estiloOriginal);
+    destaquePesquisa.layer.eachLayer?.(poligono => poligono.getElement?.()?.removeAttribute('pointer-events'));
     destaquePesquisa = null;
 }
 function destacarContorno(layer) {
     limparDestaquePesquisa();
     const estiloOriginal = { color: layer.options.color, weight: layer.options.weight };
-    // Não usa bringToFront: campus e blocos ficariam por cima das salas e bloqueariam seus cliques.
+    // Mantém o destaque no mesmo plano e desativa a captura de cliques do polígono inteiro.
     layer.setStyle({ color: '#00a6b5', weight: 4 });
+    layer.eachLayer?.(poligono => {
+        const elemento = poligono.getElement?.();
+        if (elemento) elemento.setAttribute('pointer-events', 'none');
+    });
     destaquePesquisa = {
         layer,
         estiloOriginal,
-        temporizador: setTimeout(limparDestaquePesquisa, 3000)
+        temporizador: setTimeout(limparDestaquePesquisa, 12000)
     };
 }
 
 // Rótulo exibido ao lado de cada resultado e ordem de exibição (campus, blocos e depois salas).
-const rotulosCategoria = { campus: 'Campus', blocos: 'Bloco' };
-const ordemCategoria = { campus: 0, blocos: 1, salas: 2 };
+const rotulosCategoria = { campus: 'Campus', blocos: 'Bloco', 'outros-locais': 'Ponto de interesse' };
+const ordemCategoria = { campus: 0, blocos: 1, salas: 2, 'outros-locais': 3 };
 
 function pesquisarLocais() {
     resultadosPesquisa.replaceChildren();
@@ -610,6 +639,14 @@ function pesquisarLocais() {
             botao.appendChild(etiqueta);
         }
         botao.addEventListener('click', function () {
+            if (categoria === 'outros-locais') {
+                fecharPainelLocal();
+                layer.openPopup();
+                map.setView(layer.getLatLng(), Math.max(map.getZoom(), 19));
+                painelPesquisa.hidden = true;
+                botaoPesquisa.setAttribute('aria-expanded', 'false');
+                return;
+            }
             const ehAmbiente = categoria === 'salas';
             const idBloco = String(p.id_bloco ?? '').padStart(2, '0');
             if (ehAmbiente && idBloco === '03' && [0, 1].includes(Number(p.andar))) {
@@ -662,3 +699,4 @@ painelPesquisa.addEventListener('keydown', function (evento) {
 carregarGeoJSON("dados/campus.geojson", "#9be5aeab", "campus");
 carregarGeoJSON("dados/blocos.geojson", "#54bbe4ce", "blocos");
 carregarGeoJSON("dados/salas.geojson", "#3f2f1e", "salas");
+carregarGeoJSON("dados/outros-locais.geojson", null, "outros-locais");
