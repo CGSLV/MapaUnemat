@@ -239,12 +239,13 @@ function carregarGeoJSON(arquivo, cor, tipo) {
             return resposta.json();
         })
         .then(dados => {
+            //Adiciona os pins dos locais de interesse academico
             if (tipo === 'outros-locais') {
                 const iconesPorCategoria = {
-                    moradia: L.icon({ iconUrl: 'dados/house.png', iconSize: [32, 32], iconAnchor: [16, 30], popupAnchor: [0, -28] }),
-                    alimentacao: L.icon({ iconUrl: 'dados/restaurant.png', iconSize: [32, 32], iconAnchor: [16, 30], popupAnchor: [0, -28] }),
-                    alimetacao: L.icon({ iconUrl: 'dados/restaurant.png', iconSize: [32, 32], iconAnchor: [16, 30], popupAnchor: [0, -28] }),
-                    saude: L.icon({ iconUrl: 'dados/hospital.png', iconSize: [32, 32], iconAnchor: [16, 30], popupAnchor: [0, -28] })
+                    moradia: L.icon({ iconUrl: 'imagens/house.png', iconSize: [32, 32], iconAnchor: [16, 30], popupAnchor: [0, -28] }),
+                    alimentacao: L.icon({ iconUrl: 'imagens/restaurant.png', iconSize: [32, 32], iconAnchor: [16, 30], popupAnchor: [0, -28] }),
+                    alimetacao: L.icon({ iconUrl: 'imagens/restaurant.png', iconSize: [32, 32], iconAnchor: [16, 30], popupAnchor: [0, -28] }),
+                    saude: L.icon({ iconUrl: 'imagens/hospital.png', iconSize: [32, 32], iconAnchor: [16, 30], popupAnchor: [0, -28] })
                 };
                 const camadaPins = L.geoJSON(dados, {
                     pointToLayer: (feature, latlng) => {
