@@ -225,10 +225,133 @@ const coresPorTipo = {
 
 
 
+// ---------- Link direto e ações do local (compartilhar e como chegar) ----------
+
+// Transforma um nome em texto simples para URL: "Residencial 2K" vira "residencial-2k".
+function nomeParaChave(nome) {
+    return normalizarPesquisa(nome).replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+}
+
+// Chave usada em ?local=... Salas usam o id_local; pontos de interesse usam o nome.
+// Só vale se for única; caso contrário retorna null e o compartilhamento usa o ponto do Google Maps.
+function chaveDoLocal(item) {
+    if (item.categoria === 'salas') {
+        const id = String(item.propriedades.id_local ?? '').trim();
+        const repetidos = locaisPesquisa.filter(o => o.categoria === 'salas' && String(o.propriedades.id_local ?? '').trim() === id).length;
+        return id && repetidos === 1 ? id : null;
+    }
+    if (item.categoria === 'outros-locais') {
+        const chave = nomeParaChave(item.propriedades.nome);
+        const repetidos = locaisPesquisa.filter(o => o.categoria === 'outros-locais' && nomeParaChave(o.propriedades.nome) === chave).length;
+        return chave && repetidos === 1 ? chave : null;
+    }
+    return null;
+}
+
+// Endereço deste mapa com o parâmetro ?local=, mantendo a pasta onde o site estiver hospedado.
+function montarLinkDireto(chave) {
+    const url = new URL(window.location.href);
+    url.search = '';
+    url.hash = '';
+    url.searchParams.set('local', chave);
+    return url.toString();
+}
+
+// Ponto central do objeto: posição do marcador ou centro do polígono.
+function centroDoLocal(layer) {
+    if (layer.getLatLng) return layer.getLatLng();
+    try {
+        return layer.getCenter();
+    } catch (erro) {
+        // getCenter exige a camada no mapa; o centro da caixa envolvente serve de reserva.
+        return layer.getBounds().getCenter();
+    }
+}
+
+function criarBotaoAcao(rotuloAria, svgInterno) {
+    const botao = document.createElement('button');
+    botao.type = 'button';
+    botao.className = 'acao-local';
+    botao.setAttribute('aria-label', rotuloAria);
+    botao.innerHTML = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${svgInterno}</svg>`;
+    return botao;
+}
+
+// Cria os botões discretos "Como chegar" e "Compartilhar localização" para a sala ou pin clicado.
+function criarAcoesLocal(nomeLocal, layer) {
+    const area = document.createElement('div');
+    area.className = 'acoes-local';
+
+    const botaoRota = criarBotaoAcao(`Como chegar a ${nomeLocal}`,
+        '<path d="M12 3 21 12 12 21 3 12z"/><path d="M9 14v-2.5A1.5 1.5 0 0 1 10.5 10H15m0 0-2-2m2 2-2 2"/>');
+    botaoRota.title = 'Como chegar';
+    const botaoCompartilhar = criarBotaoAcao(`Compartilhar localização de ${nomeLocal}`,
+        '<circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4m0-11-6.8 4"/>');
+    botaoCompartilhar.title = 'Compartilhar localização';
+
+    // Mensagem de resultado; reaproveita o estilo e a limpeza automática do aviso de cópia.
+    const aviso = document.createElement('span');
+    aviso.className = 'aviso-copia';
+    aviso.setAttribute('role', 'status');
+
+    // Como chegar: abre a rota no Google Maps; o ponto de partida é a posição atual da pessoa.
+    botaoRota.addEventListener('click', function () {
+        const c = centroDoLocal(layer);
+        window.open(`https://www.google.com/maps/dir/?api=1&destination=${c.lat.toFixed(6)},${c.lng.toFixed(6)}`, '_blank', 'noopener');
+    });
+
+    botaoCompartilhar.addEventListener('click', async function () {
+        const interacao = interacaoCopia;
+        botaoCompartilhar.disabled = true;
+        aviso.textContent = '';
+
+        // Prefere o link que abre este mapa já na ficha do local; sem chave única, usa o ponto no Google Maps.
+        const item = locaisPesquisa.find(o => o.layer === layer);
+        const chave = item ? chaveDoLocal(item) : null;
+        let url;
+        if (chave) {
+            url = montarLinkDireto(chave);
+        } else {
+            const c = centroDoLocal(layer);
+            url = `https://www.google.com/maps/search/?api=1&query=${c.lat.toFixed(6)},${c.lng.toFixed(6)}`;
+        }
+        const texto = `${nomeLocal} — UNEMAT, Campus de Barra do Bugres`;
+
+        async function copiarLink() {
+            await navigator.clipboard.writeText(`${texto}\n${url}`);
+            if (interacao === interacaoCopia) aviso.textContent = 'Link da localização copiado!';
+        }
+
+        try {
+            if (navigator.share) {
+                // Abre o menu de compartilhamento do aparelho (WhatsApp, Telegram, e-mail etc.).
+                await navigator.share({ title: nomeLocal, text: texto, url });
+            } else {
+                // Navegadores sem menu de compartilhamento: copia o link.
+                await copiarLink();
+            }
+        } catch (erro) {
+            // AbortError significa que a pessoa fechou o menu de compartilhamento; não é falha.
+            if (erro.name !== 'AbortError') {
+                try {
+                    await copiarLink();
+                } catch (erroCopia) {
+                    if (interacao === interacaoCopia) aviso.textContent = 'Não foi possível compartilhar a localização.';
+                }
+            }
+        } finally {
+            botaoCompartilhar.disabled = false;
+        }
+    });
+
+    area.append(botaoRota, botaoCompartilhar, aviso);
+    return area;
+}
+
 // Lê um arquivo GeoJSON e desenha seus polígonos com a cor recebida.
 function carregarGeoJSON(arquivo, cor, tipo) {
     // O carregamento é assíncrono: os próximos passos executam quando a resposta chega.
-    fetch(arquivo)
+    return fetch(arquivo)
         .then(resposta => {
             // Respostas HTTP de erro, como arquivo não encontrado, seguem para o catch.
             if (!resposta.ok) {
@@ -255,9 +378,13 @@ function carregarGeoJSON(arquivo, cor, tipo) {
                     },
                     onEachFeature: (feature, marker) => {
                         const p = feature.properties ?? {};
+                        const nomePin = p.nome ?? 'Local de interesse';
+                        const conteudoPopup = document.createElement('div');
+                        conteudoPopup.className = 'popup-local';
                         const nome = document.createElement('strong');
-                        nome.textContent = p.nome ?? 'Local de interesse';
-                        marker.bindPopup(nome);
+                        nome.textContent = nomePin;
+                        conteudoPopup.append(nome, criarAcoesLocal(nomePin, marker));
+                        marker.bindPopup(conteudoPopup);
                         locaisPesquisa.push({ propriedades: p, layer: marker, categoria: 'outros-locais' });
                     }
                 }).addTo(map);
@@ -413,6 +540,11 @@ function carregarGeoJSON(arquivo, cor, tipo) {
                             true
                         );
                     }
+
+                    // Botões "Como chegar" e "Compartilhar" desta sala/setor.
+                    const andarValido = propriedades.andar != null && String(propriedades.andar).trim() !== '';
+                    const nomeCompartilhado = titulo.textContent + (andarValido ? ` (Andar ${Number(propriedades.andar) + 1})` : '');
+                    titulo.after(criarAcoesLocal(nomeCompartilhado, layer));
 
                     const estiloOriginal = { color: layer.options.color, weight: layer.options.weight };
                     layer.on('click', function () {
@@ -616,6 +748,43 @@ function destacarContorno(layer) {
 const rotulosCategoria = { campus: 'Campus', blocos: 'Bloco', 'outros-locais': 'Ponto de interesse' };
 const ordemCategoria = { campus: 0, blocos: 1, salas: 2, 'outros-locais': 3 };
 
+// Abre um local no mapa: troca o andar, mostra a ficha (ou popup) e enquadra o objeto.
+// Usado pela pesquisa e pelo link direto (?local=...).
+function abrirLocal({ propriedades: p, layer, categoria }) {
+    if (categoria === 'outros-locais') {
+        fecharPainelLocal();
+        layer.openPopup();
+        map.setView(layer.getLatLng(), Math.max(map.getZoom(), 19));
+        return;
+    }
+    const ehAmbiente = categoria === 'salas';
+    const idBloco = String(p.id_bloco ?? '').padStart(2, '0');
+    if (ehAmbiente && idBloco === '03' && [0, 1].includes(Number(p.andar))) {
+        botoesAndares.find(b => Number(b.dataset.andar) === Number(p.andar))?.click();
+    }
+    if (ehAmbiente) {
+        layer.fire('click');
+    } else {
+        // Blocos e campus: fecha a ficha aberta e destaca o contorno.
+        fecharPainelLocal();
+        destacarContorno(layer);
+    }
+    // Reserva espaço para a ficha para manter o resultado visível.
+    const tamanho = map.getSize();
+    const painel = document.getElementById('painel-local');
+    const mobile = window.matchMedia('(max-width: 767px)').matches;
+    map.fitBounds(layer.getBounds(), {
+        // Campus é grande; blocos e salas aceitam mais aproximação.
+        maxZoom: categoria === 'campus' ? 19 : ehAmbiente ? 21 : 20,
+        paddingTopLeft: [20, 65],
+        paddingBottomRight: !ehAmbiente
+            ? [20, 20]
+            : mobile
+                ? [20, Math.min(painel.offsetHeight + 20, tamanho.y * 0.48)]
+                : [Math.min(painel.offsetWidth + 32, tamanho.x * 0.48), 20]
+    });
+}
+
 function pesquisarLocais() {
     resultadosPesquisa.replaceChildren();
     const termo = normalizarPesquisa(termoPesquisa.value);
@@ -640,43 +809,10 @@ function pesquisarLocais() {
             botao.appendChild(etiqueta);
         }
         botao.addEventListener('click', function () {
-            if (categoria === 'outros-locais') {
-                fecharPainelLocal();
-                layer.openPopup();
-                map.setView(layer.getLatLng(), Math.max(map.getZoom(), 19));
-                painelPesquisa.hidden = true;
-                botaoPesquisa.setAttribute('aria-expanded', 'false');
-                return;
-            }
-            const ehAmbiente = categoria === 'salas';
-            const idBloco = String(p.id_bloco ?? '').padStart(2, '0');
-            if (ehAmbiente && idBloco === '03' && [0, 1].includes(Number(p.andar))) {
-                botoesAndares.find(b => Number(b.dataset.andar) === Number(p.andar))?.click();
-            }
-            if (ehAmbiente) {
-                layer.fire('click');
-            } else {
-                // Blocos e campus: fecha a ficha aberta e destaca o contorno.
-                fecharPainelLocal();
-                destacarContorno(layer);
-            }
+            abrirLocal({ propriedades: p, layer, categoria });
             painelPesquisa.hidden = true;
             botaoPesquisa.setAttribute('aria-expanded', 'false');
             termoPesquisa.blur();
-            // Reserva espaço para a ficha para manter o resultado visível.
-            const tamanho = map.getSize();
-            const painel = document.getElementById('painel-local');
-            const mobile = window.matchMedia('(max-width: 767px)').matches;
-            map.fitBounds(layer.getBounds(), {
-                // Campus é grande; blocos e salas aceitam mais aproximação.
-                maxZoom: categoria === 'campus' ? 19 : ehAmbiente ? 21 : 20,
-                paddingTopLeft: [20, 65],
-                paddingBottomRight: !ehAmbiente
-                    ? [20, 20]
-                    : mobile
-                        ? [20, Math.min(painel.offsetHeight + 20, tamanho.y * 0.48)]
-                        : [Math.min(painel.offsetWidth + 32, tamanho.x * 0.48), 20]
-            });
             botaoPesquisa.focus({ preventScroll: true });
         });
         item.appendChild(botao);
@@ -697,7 +833,18 @@ painelPesquisa.addEventListener('keydown', function (evento) {
 });
 
 // Carregando os GeoJson no mapa por camadas
-carregarGeoJSON("dados/campus.geojson", "#9be5aeab", "campus");
-carregarGeoJSON("dados/blocos.geojson", "#54bbe4ce", "blocos");
-carregarGeoJSON("dados/salas.geojson", "#3f2f1e", "salas");
-carregarGeoJSON("dados/outros-locais.geojson", null, "outros-locais");
+const carregamentos = [
+    carregarGeoJSON("dados/campus.geojson", "#9be5aeab", "campus"),
+    carregarGeoJSON("dados/blocos.geojson", "#54bbe4ce", "blocos"),
+    carregarGeoJSON("dados/salas.geojson", "#3f2f1e", "salas"),
+    carregarGeoJSON("dados/outros-locais.geojson", null, "outros-locais")
+];
+
+// Link direto: se o endereço tiver ?local=..., abre esse local assim que todos os dados carregarem.
+// Link antigo ou inválido é ignorado e o mapa abre normalmente.
+Promise.allSettled(carregamentos).then(function () {
+    const chave = new URLSearchParams(window.location.search).get('local');
+    if (!chave) return;
+    const item = locaisPesquisa.find(o => chaveDoLocal(o) === chave);
+    if (item) abrirLocal(item);
+});
