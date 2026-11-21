@@ -365,9 +365,8 @@ function carregarGeoJSON(arquivo, cor, tipo) {
             //Adiciona os pins dos locais de interesse academico
             if (tipo === 'outros-locais') {
                 const iconesPorCategoria = {
-                    moradia: L.icon({ iconUrl: 'imagens/house.png', iconSize: [32, 32], iconAnchor: [16, 30], popupAnchor: [0, -28] }),
-                    alimentacao: L.icon({ iconUrl: 'imagens/restaurant.png', iconSize: [32, 32], iconAnchor: [16, 30], popupAnchor: [0, -28] }),
-                    alimetacao: L.icon({ iconUrl: 'imagens/restaurant.png', iconSize: [32, 32], iconAnchor: [16, 30], popupAnchor: [0, -28] }),
+                    moradia: L.icon({ iconUrl: 'imagens/house-yellow.png', iconSize: [32, 32], iconAnchor: [16, 30], popupAnchor: [0, -28] }),
+                    alimentacao: L.icon({ iconUrl: 'imagens/restaurant-cores.png', iconSize: [32, 32], iconAnchor: [16, 30], popupAnchor: [0, -28] }),
                     saude: L.icon({ iconUrl: 'imagens/hospital.png', iconSize: [32, 32], iconAnchor: [16, 30], popupAnchor: [0, -28] })
                 };
                 const camadaPins = L.geoJSON(dados, {

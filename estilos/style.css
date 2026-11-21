@@ -299,13 +299,15 @@ header {
 }
 #fechar-painel-local {
     position: absolute;
+    /* Fica na frente do cabeçalho da ficha, que também é posicionado. */
+    z-index: 2;
     top: 4px;
     right: 4px;
     width: 44px;
     height: 44px;
     border: 0;
     background: transparent;
-    color: var(--texto);
+    color: #f9f9f9; /**/
     font-size: 24px;
     cursor: pointer;
 }

@@ -4093,47 +4093,6 @@
                 "coordinates": [
                     [
                         [
-                            -57.17298,
-                            -15.064112
-                        ],
-                        [
-                            -57.173005,
-                            -15.064112
-                        ],
-                        [
-                            -57.173005,
-                            -15.064148
-                        ],
-                        [
-                            -57.17298,
-                            -15.064148
-                        ],
-                        [
-                            -57.17298,
-                            -15.064112
-                        ]
-                    ]
-                ]
-            },
-            "properties": {
-                "id_local": 55,
-                "nome": "Sala Pascuale",
-                "id_bloco": "01",
-                "tipo": "sala",
-                "capacidade": 0,
-                "palavras_chave": [
-                    "sala pascuale",
-                    "sala"
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
                             -57.172952,
                             -15.064169
                         ],
@@ -4209,46 +4168,6 @@
                     "biologia",
                     "laboratorio microbiologia"
                 ]
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            -57.172898,
-                            -15.064257
-                        ],
-                        [
-                            -57.17292,
-                            -15.064257
-                        ],
-                        [
-                            -57.172938,
-                            -15.064257
-                        ],
-                        [
-                            -57.172915,
-                            -15.064289
-                        ],
-                        [
-                            -57.172898,
-                            -15.064289
-                        ],
-                        [
-                            -57.172898,
-                            -15.064257
-                        ]
-                    ]
-                ]
-            },
-            "properties": {
-                "id_local": 0,
-                "nome": 0,
-                "id_bloco": "01",
-                "tipo": 0
             }
         },
         {
