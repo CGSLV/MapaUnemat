@@ -406,13 +406,13 @@
             },
             "properties": {
                 "id_local": 82,
-                "nome": "C17",
+                "nome": "Banheiros",
                 "id_bloco": "03",
-                "tipo": "sala",
+                "tipo": "banheiro",
                 "andar": 0,
                 "palavras_chave": [
-                    "C17",
-                    "sala"
+                    "banheiros",
+                    "banheiro bloco C"
                 ]
             }
         },
@@ -808,9 +808,13 @@
             },
             "properties": {
                 "id_local": 138,
-                "nome": "Sala",
+                "nome": "D08",
                 "id_bloco": "04",
-                "tipo": "sala"
+                "tipo": "sala",
+                "palavras_chave": [
+                    "D08",
+                    "sala"
+                ]
             }
         },
         {
@@ -844,9 +848,14 @@
             },
             "properties": {
                 "id_local": 139,
-                "nome": "Sala",
+                "nome": "Sala de Reuniôes e Orientações / D10",
                 "id_bloco": "04",
-                "tipo": "sala"
+                "tipo": "sala",
+                "palavras_chave": [
+                    "d10",
+                    "sala",
+                    "Sala de Reuniôes e Orientações"
+                ]
             }
         },
         {
@@ -880,9 +889,16 @@
             },
             "properties": {
                 "id_local": 132,
-                "nome": "Sala",
+                "nome": "LMCNCA / D06",
                 "id_bloco": "04",
-                "tipo": "sala"
+                "tipo": "laboratorio",
+                "palavras_chave": [
+                    "d06",
+                    "sala",
+                    "LMCNCA",
+                    "laboratorio de metodologia cientifica, neurociencia e ciencia da aprendizagem"
+                ],
+                "nome_completo": "Laboratório de Metodologia Científica, Neurociência e Ciência da Aprendizagem"
             }
         },
         {
@@ -916,9 +932,13 @@
             },
             "properties": {
                 "id_local": 128,
-                "nome": "Sala",
+                "nome": "D01",
                 "id_bloco": "04",
-                "tipo": "sala"
+                "tipo": "sala",
+                "palavras_chave": [
+                    "D01",
+                    "sala"
+                ]
             }
         },
         {
@@ -952,9 +972,13 @@
             },
             "properties": {
                 "id_local": 124,
-                "nome": "Sala",
+                "nome": "D17",
                 "id_bloco": "04",
-                "tipo": "sala"
+                "tipo": "sala",
+                "palavras_chave": [
+                    "d17",
+                    "sala"
+                ]
             }
         },
         {
@@ -988,9 +1012,13 @@
             },
             "properties": {
                 "id_local": 120,
-                "nome": "Sala",
+                "nome": "D20",
                 "id_bloco": "04",
-                "tipo": "sala"
+                "tipo": "sala",
+                "palavras_chave": [
+                    "d20",
+                    "sala"
+                ]
             }
         },
         {
@@ -1024,9 +1052,13 @@
             },
             "properties": {
                 "id_local": 119,
-                "nome": "Sala",
+                "nome": "D19",
                 "id_bloco": "04",
-                "tipo": "sala"
+                "tipo": "sala",
+                "palavras_chave": [
+                    "d19",
+                    "sala"
+                ]
             }
         },
         {
@@ -1060,9 +1092,13 @@
             },
             "properties": {
                 "id_local": 121,
-                "nome": "Sala",
+                "nome": "D21",
                 "id_bloco": "04",
-                "tipo": "sala"
+                "tipo": "sala",
+                "palavras_chave": [
+                    "d21",
+                    "sala"
+                ]
             }
         },
         {
@@ -1096,9 +1132,13 @@
             },
             "properties": {
                 "id_local": 122,
-                "nome": "Sala",
+                "nome": "D22",
                 "id_bloco": "04",
-                "tipo": "sala"
+                "tipo": "sala",
+                "palavras_chave": [
+                    "d22",
+                    "sala"
+                ]
             }
         },
         {
@@ -1132,12 +1172,12 @@
             },
             "properties": {
                 "id_local": 89,
-                "nome": "C10",
+                "nome": "C14",
                 "id_bloco": "03",
                 "tipo": "sala",
                 "andar": 1,
                 "palavras_chave": [
-                    "C10",
+                    "C14",
                     "sala"
                 ]
             }
@@ -1173,12 +1213,12 @@
             },
             "properties": {
                 "id_local": 90,
-                "nome": "C12",
+                "nome": "C16",
                 "id_bloco": "03",
                 "tipo": "sala",
                 "andar": 1,
                 "palavras_chave": [
-                    "C12",
+                    "C16",
                     "sala"
                 ]
             }
@@ -1214,13 +1254,17 @@
             },
             "properties": {
                 "id_local": 88,
-                "nome": "Laboratório de Arquitetura",
+                "nome": "LEHA/C12",
                 "id_bloco": "03",
                 "tipo": "laboratorio",
                 "andar": 1,
                 "palavras_chave": [
-                    "laboratorio de arquitetura"
-                ]
+                    "laboratorio de arquitetura",
+                    "leha",
+                    "laboratorio de ensino de historia e arte",
+                    "c12"
+                ],
+                "nome_completo": "Laboratório de Ensino de História e Arte"
             }
         },
         {
@@ -1336,12 +1380,12 @@
             },
             "properties": {
                 "id_local": 92,
-                "nome": "C16",
+                "nome": "C20",
                 "id_bloco": "03",
                 "tipo": "sala",
                 "andar": 1,
                 "palavras_chave": [
-                    "C16",
+                    "C20",
                     "sala"
                 ]
             }
@@ -1377,12 +1421,12 @@
             },
             "properties": {
                 "id_local": 91,
-                "nome": "C14",
+                "nome": "C18",
                 "id_bloco": "03",
                 "tipo": "sala",
                 "andar": 1,
                 "palavras_chave": [
-                    "C14",
+                    "C18",
                     "sala"
                 ]
             }
@@ -4006,9 +4050,9 @@
             },
             "properties": {
                 "id_local": 59,
-                "nome": "Sala",
+                "nome": "Almoxaricado",
                 "id_bloco": "01",
-                "tipo": "desconhecido"
+                "tipo": "administrativo"
             }
         },
         {
@@ -4042,9 +4086,9 @@
             },
             "properties": {
                 "id_local": 60,
-                "nome": "Sala",
+                "nome": "Atendimento",
                 "id_bloco": "01",
-                "tipo": "desconhecido"
+                "tipo": "circulacao"
             }
         },
         {
@@ -4139,6 +4183,22 @@
                         ],
                         [
                             -57.172898,
+                            -15.064264
+                        ],
+                        [
+                            -57.172851,
+                            -15.064264
+                        ],
+                        [
+                            -57.172851,
+                            -15.064246
+                        ],
+                        [
+                            -57.172851,
+                            -15.064235
+                        ],
+                        [
+                            -57.172898,
                             -15.064235
                         ],
                         [
@@ -4168,42 +4228,6 @@
                     "biologia",
                     "laboratorio microbiologia"
                 ]
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            -57.172851,
-                            -15.064304
-                        ],
-                        [
-                            -57.172851,
-                            -15.064235
-                        ],
-                        [
-                            -57.172898,
-                            -15.064235
-                        ],
-                        [
-                            -57.172898,
-                            -15.064304
-                        ],
-                        [
-                            -57.172851,
-                            -15.064304
-                        ]
-                    ]
-                ]
-            },
-            "properties": {
-                "id_local": 0,
-                "nome": 0,
-                "id_bloco": "01",
-                "tipo": 0
             }
         },
         {
@@ -4540,9 +4564,14 @@
             },
             "properties": {
                 "id_local": 118,
-                "nome": "Sala",
+                "nome": "D15 / Mosaico",
                 "id_bloco": "04",
-                "tipo": "sala"
+                "tipo": "sala",
+                "palavras_chave": [
+                    "d15",
+                    "sala",
+                    "mosaico"
+                ]
             }
         },
         {
@@ -4576,11 +4605,12 @@
             },
             "properties": {
                 "id_local": 123,
-                "nome": "Maquetaria",
+                "nome": "Maquetaria / D18",
                 "id_bloco": "04",
                 "tipo": "laboratorio",
                 "palavras_chave": [
-                    "maquetaria"
+                    "maquetaria",
+                    "d18"
                 ]
             }
         },
@@ -4615,9 +4645,13 @@
             },
             "properties": {
                 "id_local": 125,
-                "nome": "Sala",
+                "nome": "D16",
                 "id_bloco": "04",
-                "tipo": "sala"
+                "tipo": "sala",
+                "palavras_chave": [
+                    "d16",
+                    "sala"
+                ]
             }
         },
         {
@@ -4651,9 +4685,13 @@
             },
             "properties": {
                 "id_local": 126,
-                "nome": "Sala",
+                "nome": "D14",
                 "id_bloco": "04",
-                "tipo": "sala"
+                "tipo": "sala",
+                "palavras_chave": [
+                    "D14",
+                    "sala"
+                ]
             }
         },
         {
@@ -4687,9 +4725,13 @@
             },
             "properties": {
                 "id_local": 127,
-                "nome": "Sala",
+                "nome": "D13",
                 "id_bloco": "04",
-                "tipo": "sala"
+                "tipo": "sala",
+                "palavras_chave": [
+                    "d13",
+                    "sala"
+                ]
             }
         },
         {
@@ -4723,9 +4765,13 @@
             },
             "properties": {
                 "id_local": 117,
-                "nome": "Sala",
+                "nome": "D12",
                 "id_bloco": "04",
-                "tipo": "sala"
+                "tipo": "sala",
+                "palavras_chave": [
+                    "d12",
+                    "sala"
+                ]
             }
         },
         {
@@ -4908,9 +4954,13 @@
             },
             "properties": {
                 "id_local": 129,
-                "nome": "Sala",
+                "nome": "D02",
                 "id_bloco": "04",
-                "tipo": "sala"
+                "tipo": "sala",
+                "palavras_chave": [
+                    "D02",
+                    "sala"
+                ]
             }
         },
         {
@@ -4987,9 +5037,13 @@
             },
             "properties": {
                 "id_local": 136,
-                "nome": "Sala",
+                "nome": "D03",
                 "id_bloco": "04",
-                "tipo": "sala"
+                "tipo": "sala",
+                "palavras_chave": [
+                    "D03",
+                    "sala"
+                ]
             }
         },
         {
@@ -5023,9 +5077,13 @@
             },
             "properties": {
                 "id_local": 130,
-                "nome": "Sala",
+                "nome": "D04",
                 "id_bloco": "04",
-                "tipo": "sala"
+                "tipo": "sala",
+                "palavras_chave": [
+                    "D04",
+                    "sala"
+                ]
             }
         },
         {
@@ -5059,9 +5117,13 @@
             },
             "properties": {
                 "id_local": 137,
-                "nome": "Sala",
+                "nome": "D07",
                 "id_bloco": "04",
-                "tipo": "sala"
+                "tipo": "sala",
+                "palavras_chave": [
+                    "D07",
+                    "sala"
+                ]
             }
         },
         {
@@ -5111,9 +5173,13 @@
             },
             "properties": {
                 "id_local": 131,
-                "nome": "Sala",
+                "nome": "D05",
                 "id_bloco": "04",
-                "tipo": "sala"
+                "tipo": "sala",
+                "palavras_chave": [
+                    "D05",
+                    "sala"
+                ]
             }
         },
         {
@@ -5147,9 +5213,14 @@
             },
             "properties": {
                 "id_local": 134,
-                "nome": "Sala",
+                "nome": "Sala de Estudos e Produção / D09",
                 "id_bloco": "04",
-                "tipo": "sala"
+                "tipo": "sala",
+                "palavras_chave": [
+                    "d09",
+                    "sala",
+                    "sala de estudos e producao"
+                ]
             }
         },
         {
@@ -5183,7 +5254,7 @@
             },
             "properties": {
                 "id_local": 133,
-                "nome": "Cozinha",
+                "nome": "COPA",
                 "id_bloco": "04",
                 "tipo": "circulacao"
             }
@@ -5219,9 +5290,13 @@
             },
             "properties": {
                 "id_local": 135,
-                "nome": "Sala",
+                "nome": "D11",
                 "id_bloco": "04",
-                "tipo": "sala"
+                "tipo": "sala",
+                "palavras_chave": [
+                    "d11",
+                    "sala"
+                ]
             }
         },
         {
